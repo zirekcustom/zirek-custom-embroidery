@@ -6,7 +6,7 @@
   <title>ZIREK Custom Embroidery — Premium Tailoring & Personalisation</title>
   <link rel="stylesheet" href="assets/style.css">
   <style>
-    /* Temel Koyu Yeşil Tema Düzenlemeleri */
+    /* Temel Koyu Yeşil Tema */
     body {
       background-color: #0b1712 !important;
       color: #e5ece8;
@@ -25,7 +25,7 @@
       border-bottom: 1px solid #192e24;
     }
 
-    /* Hero Section Fix */
+    /* Hero Section */
     .hero-section {
       padding: 60px 0;
       background: radial-gradient(circle at center, #152b21 0%, #0b1712 100%);
@@ -77,10 +77,11 @@
       gap: 15px;
     }
 
+    /* Hero Right Logo Box */
     .home-hero-photo {
       flex: 1;
       min-width: 280px;
-      height: 320px;
+      min-height: 280px;
       background: #12221b;
       border: 1px solid #192e24;
       border-radius: 8px;
@@ -88,13 +89,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 20px;
+      padding: 30px;
       box-sizing: border-box;
       text-align: center;
     }
     .zirek-hero-logo {
-      max-width: 180px;
-      max-height: 180px;
+      max-width: 220px;
+      height: auto;
       object-fit: contain;
     }
     .hero-photo-label {
@@ -115,8 +116,8 @@
     /* Vitrin Kartları (Showcase Grid Fix) */
     .showcase-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
       margin-top: 40px;
     }
     .showcase-card {
@@ -221,7 +222,8 @@
         </div>
 
         <div class="home-hero-photo">
-          <img src="assets/logo.png" alt="ZIREK Custom Embroidery Logo" class="zirek-hero-logo" onerror="this.src='https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=400&q=80'">
+          <!-- Logo Resminiz (Dosya yolunu gerekirse güncelleyin) -->
+          <img src="assets/logo.png" alt="ZIREK Custom Embroidery Logo" class="zirek-hero-logo">
           <div class="hero-photo-label">
             ZIREK STUDIO
             <small>Precision Stitching & Design</small>
@@ -248,7 +250,7 @@
         <div class="showcase-card">
           <div class="showcase-img-wrap">
             <span class="showcase-tag">Barber & Salon</span>
-            <img src="assets/barber.jpg" alt="Barber Uniforms" onerror="this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80'">
+            <img src="assets/barber.jpg" alt="Barber Uniforms">
           </div>
           <div class="showcase-content">
             <h3 class="showcase-title">Barber & Beauty</h3>
@@ -259,7 +261,7 @@
         <div class="showcase-card">
           <div class="showcase-img-wrap">
             <span class="showcase-tag">Hospitality</span>
-            <img src="assets/chef.jpg" alt="Chef & Hospitality Wear" onerror="this.src='https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80'">
+            <img src="assets/chef.jpg" alt="Chef & Hospitality Wear">
           </div>
           <div class="showcase-content">
             <h3 class="showcase-title">Chef & Catering</h3>
@@ -270,7 +272,7 @@
         <div class="showcase-card">
           <div class="showcase-img-wrap">
             <span class="showcase-tag">Corporate</span>
-            <img src="assets/staff.jpg" alt="Staff Workwear" onerror="this.src='https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=600&q=80'">
+            <img src="assets/staff.jpg" alt="Staff Workwear">
           </div>
           <div class="showcase-content">
             <h3 class="showcase-title">Staff & Corporate</h3>
@@ -281,7 +283,7 @@
         <div class="showcase-card">
           <div class="showcase-img-wrap">
             <span class="showcase-tag">Personalized</span>
-            <img src="assets/custom.jpg" alt="Personalised Clothing" onerror="this.src='https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80'">
+            <img src="assets/custom.jpg" alt="Personalised Clothing">
           </div>
           <div class="showcase-content">
             <h3 class="showcase-title">Personalized Apparel</h3>
