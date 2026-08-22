@@ -13,7 +13,6 @@
       --text-muted: #5c584f;
       --accent: #9e7a2f;
     }
-
     body {
       background-color: var(--bg-color);
       color: var(--text-main);
@@ -22,14 +21,11 @@
       padding: 0;
       line-height: 1.5;
     }
-
     .zirek-container {
       max-width: 1140px;
       margin: 0 auto;
       padding: 0 20px;
     }
-
-    /* Header */
     .zirek-header {
       background-color: var(--bg-color);
       border-bottom: 1px solid var(--border-color);
@@ -67,13 +63,10 @@
       letter-spacing: 1px;
       color: var(--text-muted);
       text-decoration: none;
-      transition: color 0.2s;
     }
     .zirek-nav-links a:hover, .zirek-nav-links a.active {
       color: var(--accent);
     }
-
-    /* Hero Section */
     .zirek-hero {
       text-align: center;
       padding: 70px 20px 40px 20px;
@@ -83,7 +76,6 @@
       font-size: 2.8rem;
       margin-bottom: 15px;
       font-weight: normal;
-      color: var(--text-main);
     }
     .zirek-hero p {
       color: var(--text-muted);
@@ -114,8 +106,6 @@
       color: var(--accent);
       border: 1px solid var(--accent);
     }
-
-    /* Grid & Cards (Görseli Düzeltilen Alan) */
     .zirek-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -129,10 +119,6 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform 0.2s ease;
-    }
-    .zirek-card:hover {
-      transform: translateY(-4px);
     }
     .zirek-card-banner {
       background: linear-gradient(135deg, #e8e3d8 0%, #d5cfc2 100%);
@@ -161,8 +147,6 @@
       margin: 0;
       line-height: 1.5;
     }
-
-    /* Footer */
     .zirek-footer {
       background-color: var(--card-bg);
       border-top: 1px solid var(--border-color);
@@ -189,14 +173,10 @@
   </style>
 </head>
 <body>
-
-  <!-- Header / Navigation -->
   <header class="zirek-header">
     <div class="zirek-container">
       <nav class="zirek-nav">
-        <a href="index.html" class="zirek-logo">
-          ZIREK <span>EMBROIDERY</span>
-        </a>
+        <a href="index.html" class="zirek-logo">ZIREK <span>EMBROIDERY</span></a>
         <ul class="zirek-nav-links">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="business.html">Business & Workwear</a></li>
@@ -208,13 +188,10 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="zirek-hero">
     <div class="zirek-container">
       <h1>Built for your brand.</h1>
-      <p>
-        Elevate your team's image with precision custom embroidery. From high-end hospitality uniforms to bespoke corporate workwear and personalized apparel.
-      </p>
+      <p>Elevate your team's image with precision custom embroidery. From high-end hospitality uniforms to bespoke corporate workwear and personalized apparel.</p>
       <div class="zirek-btn-group">
         <a href="custom.html" class="zirek-btn">Request a Quote</a>
         <a href="business.html" class="zirek-btn zirek-btn-outline">Explore Workwear</a>
@@ -222,10 +199,8 @@
     </div>
   </section>
 
-  <!-- Grid Showcase -->
   <section class="zirek-container">
     <div class="zirek-grid">
-      
       <div class="zirek-card">
         <div class="zirek-card-banner">Salon & Spa</div>
         <div class="zirek-card-body">
@@ -233,7 +208,6 @@
           <p class="zirek-card-text">Durable, stylish aprons and tunics crafted for professional salons.</p>
         </div>
       </div>
-
       <div class="zirek-card">
         <div class="zirek-card-banner">Kitchen & Bar</div>
         <div class="zirek-card-body">
@@ -241,7 +215,6 @@
           <p class="zirek-card-text">High-temperature resistant, comfortable embroidered chef jackets.</p>
         </div>
       </div>
-
       <div class="zirek-card">
         <div class="zirek-card-banner">Corporate</div>
         <div class="zirek-card-body">
@@ -249,7 +222,6 @@
           <p class="zirek-card-text">Premium polo shirts, fleece jackets, and shirts customized for company teams.</p>
         </div>
       </div>
-
       <div class="zirek-card">
         <div class="zirek-card-banner">Bespoke</div>
         <div class="zirek-card-body">
@@ -257,11 +229,9 @@
           <p class="zirek-card-text">Custom hoodies, caps, and gift items embroidered to your exact specifications.</p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="zirek-footer">
     <div class="zirek-container">
       <ul class="zirek-footer-links">
@@ -272,11 +242,8 @@
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
       <p>Cambridge, United Kingdom | info@zirekcustom.com</p>
-      <p style="margin-top: 10px; font-size: 0.75rem; color: #8a867d;">
-        © 2026 ZIREK CUSTOM EMBROIDERY. ALL RIGHTS RESERVED.
-      </p>
+      <p style="margin-top: 10px; font-size: 0.75rem; color: #8a867d;">© 2026 ZIREK CUSTOM EMBROIDERY. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
-
 </body>
 </html>
