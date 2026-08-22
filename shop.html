@@ -1,1500 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="description" content="ZIREK Custom Embroidery — premium embroidered clothing for businesses, teams, families and personal orders across the UK.">
-
-<title>Shop | ZIREK Custom Embroidery</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-
-<style>
-
-:root{
-  --black:#080808;
-  --panel:#11110f;
-  --panel2:#161512;
-  --cream:#f4f0e8;
-  --muted:#99938a;
-  --gold:#d6ad58;
-  --gold2:#efd28b;
-  --line:#292722;
-}
-
-*{
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  margin:0;
-  background:var(--black);
-  color:var(--cream);
-  font-family:Inter,Arial,sans-serif;
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-img{
-  display:block;
-  width:100%;
-}
-
-.topbar{
-  height:34px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-bottom:1px solid var(--line);
-  color:#8b857c;
-  font-size:9px;
-  letter-spacing:.2em;
-}
-
-.header{
-  width:min(1200px,calc(100% - 48px));
-  margin:auto;
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  gap:35px;
-  border-bottom:1px solid var(--line);
-}
-
-.brand{
-  display:flex;
-  flex-direction:column;
-  font-size:23px;
-  font-weight:800;
-  letter-spacing:.17em;
-  line-height:.8;
-}
-
-.brand small{
-  margin-top:9px;
-  color:var(--gold);
-  font-size:6px;
-  letter-spacing:.27em;
-}
-
-.nav{
-  margin-left:auto;
-  display:flex;
-  gap:27px;
-}
-
-.nav a{
-  color:#aaa49b;
-  font-size:10px;
-  font-weight:600;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-}
-
-.nav a:hover,
-.nav a.active{
-  color:#fff;
-}
-
-.quote{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:43px;
-  padding:0 20px;
-  background:var(--gold);
-  color:#080808;
-  font-size:9px;
-  font-weight:800;
-  letter-spacing:.13em;
-  text-transform:uppercase;
-  transition:.2s ease;
-}
-
-.quote:hover{
-  background:var(--gold2);
-  transform:translateY(-1px);
-}
-
-/* HERO */
-
-.hero{
-  width:min(1200px,calc(100% - 48px));
-  margin:auto;
-  padding:105px 0 85px;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:80px;
-  align-items:end;
-}
-
-.eyebrow{
-  margin:0 0 16px;
-  color:var(--gold);
-  font-size:9px;
-  font-weight:800;
-  letter-spacing:.25em;
-  text-transform:uppercase;
-}
-
-.hero h1{
-  max-width:800px;
-  margin:0;
-  font-size:clamp(60px,8vw,104px);
-  line-height:.88;
-  letter-spacing:-.07em;
-}
-
-.hero h1 em{
-  font-family:"Playfair Display",Georgia,serif;
-  font-weight:400;
-  color:var(--gold2);
-}
-
-.hero-copy{
-  max-width:560px;
-  margin-top:28px;
-  color:var(--muted);
-  font-size:15px;
-  line-height:1.8;
-}
-
-.hero-side{
-  padding-bottom:8px;
-}
-
-.hero-side p{
-  color:#777168;
-  font-size:11px;
-  line-height:1.8;
-}
-
-.hero-links{
-  display:flex;
-  gap:12px;
-  margin-top:25px;
-}
-
-.outline{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:43px;
-  padding:0 20px;
-  border:1px solid #4b463e;
-  color:#eee;
-  font-size:9px;
-  font-weight:700;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-}
-
-.outline:hover{
-  border-color:var(--gold);
-  color:var(--gold2);
-}
-
-/* TRUST BAR */
-
-.trust{
-  border-block:1px solid var(--line);
-}
-
-.trust-inner{
-  width:min(1200px,calc(100% - 48px));
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-}
-
-.trust-item{
-  padding:23px 20px;
-  border-right:1px solid var(--line);
-}
-
-.trust-item:last-child{
-  border-right:0;
-}
-
-.trust-item strong{
-  display:block;
-  margin-bottom:5px;
-  color:#e9e3d8;
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-}
-
-.trust-item span{
-  color:#6f6a62;
-  font-size:9px;
-}
-
-/* SHOP */
-
-.shop{
-  width:min(1200px,calc(100% - 48px));
-  margin:auto;
-  padding:105px 0;
-}
-
-.shop-heading{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  margin-bottom:45px;
-}
-
-.shop-heading h2{
-  margin:0;
-  font-size:52px;
-  line-height:.95;
-  letter-spacing:-.06em;
-}
-
-.shop-heading h2 em{
-  font-family:"Playfair Display",Georgia,serif;
-  color:var(--gold2);
-  font-weight:400;
-}
-
-.shop-heading p{
-  max-width:350px;
-  color:#777168;
-  font-size:11px;
-  line-height:1.7;
-}
-
-/* PRODUCT GRID */
-
-.products{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:28px 18px;
-}
-
-.product{
-  min-width:0;
-}
-
-.product-image{
-  position:relative;
-  height:455px;
-  overflow:hidden;
-  background:#151412;
-  border:1px solid var(--line);
-}
-
-.product-image img{
-  height:100%;
-  object-fit:cover;
-  object-position:center;
-  transition:transform .6s cubic-bezier(.2,.7,.2,1);
-}
-
-.product-image::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 48%,
-    rgba(0,0,0,.72) 100%
-  );
-}
-
-.product-category{
-  position:absolute;
-  left:18px;
-  bottom:17px;
-  z-index:2;
-  color:#fff;
-  font-size:8px;
-  font-weight:800;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-}
-
-.product:hover .product-image img{
-  transform:scale(1.045);
-}
-
-.product-info{
-  padding-top:17px;
-}
-
-.product-info h3{
-  margin:0 0 6px;
-  font-size:15px;
-  letter-spacing:-.01em;
-}
-
-.product-info p{
-  margin:0 0 14px;
-  color:#777168;
-  font-size:10px;
-}
-
-.product-bottom{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
-}
-
-.price{
-  color:#e5c77f;
-  font-size:12px;
-  font-weight:700;
-}
-
-.product-button{
-  padding:9px 12px;
-  border:1px solid #454139;
-  color:#e9e3d8;
-  font-size:8px;
-  font-weight:800;
-  letter-spacing:.12em;
-}
-
-.product-button:hover{
-  border-color:var(--gold);
-  color:var(--gold2);
-}
-
-/* PRODUCT IMAGES */
-
-.tshirt img{
-  object-position:center;
-}
-
-.hoodie img{
-  object-position:center;
-}
-
-.polo img{
-  object-position:center;
-}
-
-.longshirt img{
-  object-position:center;
-}
-
-.workwear img{
-  object-position:center;
-}
-
-.baby img{
-  object-position:center;
-}
-
-.babyhoodie img{
-  object-position:center;
-}
-
-.babybody img{
-  object-position:center;
-}
-
-.personalised img{
-  object-position:center;
-}
-
-/* BUSINESS */
-
-.business{
-  background:#11110f;
-  border-block:1px solid var(--line);
-}
-
-.business-inner{
-  width:min(1200px,calc(100% - 48px));
-  margin:auto;
-  padding:100px 0;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:80px;
-}
-
-.business h2{
-  margin:0 0 25px;
-  font-size:60px;
-  line-height:.92;
-  letter-spacing:-.065em;
-}
-
-.business h2 em{
-  font-family:"Playfair Display",Georgia,serif;
-  font-weight:400;
-  color:var(--gold2);
-}
-
-.business p{
-  max-width:530px;
-  color:#908a82;
-  font-size:13px;
-  line-height:1.8;
-}
-
-.business-list{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  border-left:1px solid var(--line);
-}
-
-.business-list div{
-  min-height:145px;
-  padding:25px;
-  border-bottom:1px solid var(--line);
-}
-
-.business-list strong{
-  display:block;
-  margin-bottom:40px;
-  color:var(--gold);
-  font-size:9px;
-  letter-spacing:.14em;
-}
-
-.business-list span{
-  color:#e8e2d8;
-  font-size:12px;
-}
-
-/* CUSTOM */
-
-.custom{
-  width:min(1200px,calc(100% - 48px));
-  margin:auto;
-  padding:105px 0;
-}
-
-.custom-head{
-  max-width:700px;
-}
-
-.custom h2{
-  margin:0;
-  font-size:56px;
-  line-height:.95;
-  letter-spacing:-.06em;
-}
-
-.custom h2 em{
-  font-family:"Playfair Display",Georgia,serif;
-  font-weight:400;
-  color:var(--gold2);
-}
-
-.custom p{
-  max-width:550px;
-  color:#8d877f;
-  font-size:13px;
-  line-height:1.8;
-}
-
-.custom-box{
-  margin-top:45px;
-  padding:30px;
-  border:1px solid var(--line);
-  background:#10100e;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:30px;
-}
-
-.custom-box strong{
-  display:block;
-  margin-bottom:7px;
-  font-size:13px;
-}
-
-.custom-box span{
-  color:#777168;
-  font-size:10px;
-}
-
-/* FOOTER */
-
-footer{
-  border-top:1px solid var(--line);
-}
-
-.footer-inner{
-  width:min(1200px,calc(100% - 48px));
-  margin:auto;
-  padding:60px 0;
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:50px;
-}
-
-.footer-brand p{
-  max-width:300px;
-  color:#716c64;
-  font-size:10px;
-  line-height:1.7;
-}
-
-footer strong{
-  color:var(--gold);
-  font-size:8px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-}
-
-footer a:not(.brand){
-  display:block;
-  margin-top:12px;
-  color:#777168;
-  font-size:10px;
-}
-
-footer a:not(.brand):hover{
-  color:#fff;
-}
-
-.copyright{
-  padding:20px;
-  border-top:1px solid var(--line);
-  color:#56514a;
-  text-align:center;
-  font-size:8px;
-  letter-spacing:.1em;
-}
-
-/* TABLET */
-
-@media(max-width:900px){
-
-  .header{
-    flex-wrap:wrap;
-    padding:18px 0;
-  }
-
-  .nav{
-    order:3;
-    width:100%;
-    overflow-x:auto;
-    margin:0;
-    padding-bottom:3px;
-  }
-
-  .nav a{
-    white-space:nowrap;
-  }
-
-  .hero{
-    grid-template-columns:1fr;
-    gap:30px;
-    padding:75px 0;
-  }
-
-  .trust-inner{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .trust-item:nth-child(2){
-    border-right:0;
-  }
-
-  .products{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .business-inner{
-    grid-template-columns:1fr;
-  }
-
-}
-
-/* MOBILE */
-
-@media(max-width:600px){
-
-  .header,
-  .hero,
-  .shop,
-  .custom,
-  .business-inner,
-  .footer-inner,
-  .trust-inner{
-    width:calc(100% - 30px);
-  }
-
-  .header{
-    gap:18px;
-  }
-
-  .quote{
-    margin-left:auto;
-  }
-
-  .hero{
-    padding:65px 0;
-  }
-
-  .hero h1{
-    font-size:56px;
-  }
-
-  .hero-side{
-    padding:0;
-  }
-
-  .hero-links{
-    flex-direction:column;
-  }
-
-  .trust-inner{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .trust-item{
-    min-height:90px;
-  }
-
-  .shop,
-  .custom{
-    padding:75px 0;
-  }
-
-  .shop-heading{
-    display:block;
-  }
-
-  .shop-heading h2{
-    font-size:42px;
-  }
-
-  .shop-heading p{
-    margin-top:18px;
-  }
-
-  .products{
-    grid-template-columns:1fr;
-  }
-
-  .product-image{
-    height:430px;
-  }
-
-  .business-inner{
-    padding:75px 0;
-  }
-
-  .business h2{
-    font-size:45px;
-  }
-
-  .business-list{
-    grid-template-columns:1fr;
-    border-left:0;
-  }
-
-  .custom h2{
-    font-size:45px;
-  }
-
-  .custom-box{
-    display:block;
-  }
-
-  .custom-box .quote{
-    margin-top:20px;
-  }
-
-  .footer-inner{
-    grid-template-columns:1fr;
-    gap:35px;
-  }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch & Thread | Handcrafted Embroidery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f8f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 2rem 5%;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .artist-name {
+            font-size: 0.85rem;
+            color: #e74c3c;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .product-title {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+            color: #2c3e50;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+
+        .btn-add {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-add:hover {
+            background-color: #34495e;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="topbar">
-  PREMIUM CUSTOM EMBROIDERY · UK WIDE · SMALL ORDERS WELCOME
-</div>
+    <header>
+        <h1>STITCH & THREAD</h1>
+        <p>Artisanal Handcrafted Embroidery & Modern Hoop Art</p>
+    </header>
 
-<header class="header">
+    <div class="container">
+        <div class="product-grid">
 
-  <a class="brand" href="index.html">
-    ZIREK
-    <small>CUSTOM EMBROIDERY</small>
-  </a>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=800&q=80" alt="Botanical Floral Hoop">
+                <div class="product-info">
+                    <span class="artist-name">By Elena Rostova</span>
+                    <h2 class="product-title">Botanical Floral Hoop</h2>
+                    <p class="product-price">$45.00</p>
+                    <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+            </div>
 
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a class="active" href="shop.html">Shop</a>
-    <a href="business.html">Business</a>
-    <a href="custom.html">Custom</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?auto=format&fit=crop&w=800&q=80" alt="Wildflower Linen Patch">
+                <div class="product-info">
+                    <span class="artist-name">By Sarah Jenkins</span>
+                    <h2 class="product-title">Wildflower Linen Patch</h2>
+                    <p class="product-price">$32.00</p>
+                    <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+            </div>
 
-  <a class="quote" href="custom.html">
-    Get a Quote
-  </a>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?auto=format&fit=crop&w=800&q=80" alt="Custom Pet Portrait Embroidery">
+                <div class="product-info">
+                    <span class="artist-name">By Studio Thread Crafters</span>
+                    <h2 class="product-title">Custom Pet Portrait</h2>
+                    <p class="product-price">$78.00</p>
+                    <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+            </div>
 
-</header>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img class="product-image" src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?auto=format&fit=crop&w=800&q=80" alt="Abstract Thread Art">
+                <div class="product-info">
+                    <span class="artist-name">By Maya Lin</span>
+                    <h2 class="product-title">Abstract Geometry Hoop</h2>
+                    <p class="product-price">$55.00</p>
+                    <a href="#" class="btn-add">Add to Cart</a>
+                </div>
+            </div>
 
-
-<main>
-
-<!-- HERO -->
-
-<section class="hero">
-
-  <div>
-
-    <p class="eyebrow">
-      THE ZIREK COLLECTION
-    </p>
-
-    <h1>
-      Wear your<br>
-      brand with <em>purpose.</em>
-    </h1>
-
-    <p class="hero-copy">
-      Premium garments professionally embroidered with your
-      logo, name or design. Built for businesses, teams,
-      families and personal orders across the UK.
-    </p>
-
-    <div class="hero-links">
-      <a class="quote" href="custom.html">
-        Start a Custom Order
-      </a>
-
-      <a class="outline" href="#products">
-        Explore Collection
-      </a>
+        </div>
     </div>
-
-  </div>
-
-
-  <div class="hero-side">
-
-    <p class="eyebrow">
-      ONE LOGO. ENDLESS POSSIBILITIES.
-    </p>
-
-    <p>
-      From a single personalised hoodie to a complete
-      embroidered team uniform, choose your garment and
-      send us your design.
-    </p>
-
-    <p>
-      We prepare your artwork for embroidery before production.
-    </p>
-
-  </div>
-
-</section>
-
-
-<!-- TRUST -->
-
-<section class="trust">
-
-  <div class="trust-inner">
-
-    <div class="trust-item">
-      <strong>Premium Finish</strong>
-      <span>Clean, durable embroidery</span>
-    </div>
-
-    <div class="trust-item">
-      <strong>Small Orders</strong>
-      <span>Personal orders welcome</span>
-    </div>
-
-    <div class="trust-item">
-      <strong>Business Ready</strong>
-      <span>Uniforms & teamwear</span>
-    </div>
-
-    <div class="trust-item">
-      <strong>UK Wide</strong>
-      <span>Delivery across the UK</span>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- PRODUCTS -->
-
-<section class="shop" id="products">
-
-  <div class="shop-heading">
-
-    <div>
-
-      <p class="eyebrow">
-        SHOP BY GARMENT
-      </p>
-
-      <h2>
-        Choose your <em>canvas.</em>
-      </h2>
-
-    </div>
-
-    <p>
-      Select a garment, send your logo and we'll
-      prepare a custom embroidery quote.
-    </p>
-
-  </div>
-
-
-  <div class="products">
-
-
-    <!-- T SHIRT -->
-
-    <article class="product">
-
-      <a href="custom.html?product=T-Shirt">
-
-        <div class="product-image tshirt">
-
-          <img
-            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=90"
-            alt="Premium custom embroidered T-shirt"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            EMBROIDERED T-SHIRT
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Embroidered T-Shirt</h3>
-
-        <p>
-          Everyday branding · Personal & business
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £19.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=T-Shirt"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- HOODIE -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Hoodie">
-
-        <div class="product-image hoodie">
-
-          <img
-            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1200&q=90"
-            alt="Premium custom embroidered hoodie"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            EMBROIDERED HOODIE
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Embroidered Hoodie</h3>
-
-        <p>
-          Premium casual · Personal & business
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £34.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Hoodie"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- POLO -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Polo">
-
-        <div class="product-image polo">
-
-          <img
-            src="https://images.unsplash.com/photo-1625910513413-5fc45e0f4c7d?auto=format&fit=crop&w=1200&q=90"
-            alt="Custom embroidered polo shirt"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            EMBROIDERED POLO
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Embroidered Polo</h3>
-
-        <p>
-          Smart uniform · Ideal for businesses
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £22.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Polo"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- LONG SLEEVE -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Long%20Sleeve">
-
-        <div class="product-image longshirt">
-
-          <img
-            src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1200&q=90"
-            alt="Custom embroidered long sleeve clothing"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            LONG SLEEVE
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Embroidered Long Sleeve</h3>
-
-        <p>
-          Minimal branding · Everyday wear
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £24.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Long%20Sleeve"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- WORKWEAR -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Workwear">
-
-        <div class="product-image workwear">
-
-          <img
-            src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1200&q=90"
-            alt="Professional embroidered workwear"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            PROFESSIONAL WORKWEAR
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Professional Workwear</h3>
-
-        <p>
-          Staff uniforms · Teams · Trades
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            Custom Quote
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Workwear"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- PERSONALISED -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Personalised">
-
-        <div class="product-image personalised">
-
-          <img
-            src="https://images.unsplash.com/photo-1529720317453-c8da503f2051?auto=format&fit=crop&w=1200&q=90"
-            alt="Personalised embroidered clothing"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            PERSONALISED
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Personalised Clothing</h3>
-
-        <p>
-          Names · Initials · Gifts · Special pieces
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £14.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Personalised"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- BABY T SHIRT -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Baby%20T-Shirt">
-
-        <div class="product-image baby">
-
-          <img
-            src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1200&q=90"
-            alt="Personalised embroidered baby clothing"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            BABYWEAR
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Personalised Babywear</h3>
-
-        <p>
-          Names · Birth gifts · Baby designs
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £14.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Baby%20T-Shirt"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- BABY HOODIE -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Baby%20Hoodie">
-
-        <div class="product-image babyhoodie">
-
-          <img
-            src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=90"
-            alt="Personalised baby hoodie"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            BABY HOODIE
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Personalised Baby Hoodie</h3>
-
-        <p>
-          Cute personalised gifts · Premium finish
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £19.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Baby%20Hoodie"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- BABY BODY -->
-
-    <article class="product">
-
-      <a href="custom.html?product=Baby%20Body">
-
-        <div class="product-image babybody">
-
-          <img
-            src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=90"
-            alt="Personalised embroidered baby body"
-            loading="lazy"
-          >
-
-          <span class="product-category">
-            BABY BODY
-          </span>
-
-        </div>
-
-      </a>
-
-      <div class="product-info">
-
-        <h3>Personalised Baby Body</h3>
-
-        <p>
-          Names & initials · Gift ready
-        </p>
-
-        <div class="product-bottom">
-
-          <span class="price">
-            From £14.99
-          </span>
-
-          <a
-            class="product-button"
-            href="custom.html?product=Baby%20Body"
-          >
-            GET A QUOTE
-          </a>
-
-        </div>
-
-      </div>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-<!-- BUSINESS -->
-
-<section class="business">
-
-  <div class="business-inner">
-
-    <div>
-
-      <p class="eyebrow">
-        BUILT FOR BUSINESS
-      </p>
-
-      <h2>
-        Your logo.<br>
-        <em>Everywhere.</em>
-      </h2>
-
-      <p>
-        Create a consistent look across your team with
-        professionally embroidered clothing. Ideal for
-        barbers, restaurants, gyms, trades, hospitality,
-        clubs and growing businesses.
-      </p>
-
-      <a class="quote" href="business.html">
-        BUSINESS ORDERS
-      </a>
-
-    </div>
-
-
-    <div class="business-list">
-
-      <div>
-        <strong>01</strong>
-        <span>Barbers & salons</span>
-      </div>
-
-      <div>
-        <strong>02</strong>
-        <span>Restaurants & hospitality</span>
-      </div>
-
-      <div>
-        <strong>03</strong>
-        <span>Gyms & fitness teams</span>
-      </div>
-
-      <div>
-        <strong>04</strong>
-        <span>Trades & workwear</span>
-      </div>
-
-      <div>
-        <strong>05</strong>
-        <span>Clubs & teams</span>
-      </div>
-
-      <div>
-        <strong>06</strong>
-        <span>Growing businesses</span>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CUSTOM ORDER -->
-
-<section class="custom">
-
-  <div class="custom-head">
-
-    <p class="eyebrow">
-      CAN'T FIND EXACTLY WHAT YOU NEED?
-    </p>
-
-    <h2>
-      Tell us what you want.<br>
-      We'll make it <em>personal.</em>
-    </h2>
-
-    <p>
-      Send your logo, choose your garment and tell us
-      what you need. We'll review your request and
-      prepare the next step.
-    </p>
-
-  </div>
-
-
-  <div class="custom-box">
-
-    <div>
-
-      <strong>
-        Ready to create your embroidered piece?
-      </strong>
-
-      <span>
-        Upload your logo and request a custom quote.
-      </span>
-
-    </div>
-
-    <a class="quote" href="custom.html">
-      START CUSTOM ORDER
-    </a>
-
-  </div>
-
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  <div class="footer-inner">
-
-    <div class="footer-brand">
-
-      <a class="brand" href="index.html">
-        ZIREK
-        <small>CUSTOM EMBROIDERY</small>
-      </a>
-
-      <p>
-        Premium custom embroidery for businesses,
-        teams, families and personal orders across the UK.
-      </p>
-
-    </div>
-
-
-    <div>
-
-      <strong>Explore</strong>
-
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="business.html">Business</a>
-      <a href="custom.html">Custom</a>
-
-    </div>
-
-
-    <div>
-
-      <strong>Contact</strong>
-
-      <a href="contact.html">Contact Us</a>
-      <a href="custom.html">Get a Quote</a>
-      <a href="about.html">About ZIREK</a>
-
-    </div>
-
-  </div>
-
-
-  <div class="copyright">
-    © 2026 ZIREK Custom Embroidery · UK
-  </div>
-
-</footer>
 
 </body>
 </html>
