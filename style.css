@@ -1,66 +1,236 @@
-.floating{
-  position:absolute;
-  right:0;
-  bottom:30px;
-  background:#121212;
-  border:1px solid #373129;
-  padding:16px;
-  font-size:16px;
-  color:#8f8a81;
+/* ==========================================================================
+   ZIREK CUSTOM EMBROIDERY — MODERN DARK LUXURY STYLESHEET
+   ========================================================================== */
+
+:root {
+  --bg-main: #070707;
+  --bg-card: #0e0e0e;
+  --bg-input: #121212;
+  --border-color: #26231d;
+  --border-gold: rgba(213, 173, 85, 0.4);
+  
+  --gold-primary: #d5ad55;
+  --gold-light: #efd38b;
+  --gold-dark: #a88434;
+  
+  --text-main: #f0f0f0;
+  --text-muted: #8a867d;
+  --text-dim: #5c584f;
+  
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
 }
 
-.floating b{
-  color:#efd3a0;
+/* Base Reset & Smooth Scroll */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Top Banner */
+.top {
+  background: #000;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--gold-light);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+/* Navigation Header */
+header, .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(7, 7, 7, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 18px 5%;
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #fff;
+  line-height: 1;
+}
+
+.logo small {
+  font-family: var(--font-sans);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  color: var(--gold-primary);
+  margin-top: 4px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.nav a:hover, .nav a.active {
+  color: var(--gold-light);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn.gold {
+  background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+  color: #000;
+}
+
+.btn.gold:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-primary));
+  box-shadow: 0 0 25px rgba(213, 173, 85, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn.outline {
+  border-color: var(--border-gold);
+  color: var(--gold-light);
+  background: transparent;
+}
+
+.btn.outline:hover {
+  background: rgba(213, 173, 85, 0.1);
+  border-color: var(--gold-primary);
+}
+
+/* Page Typography Scaffolding */
+.page, .section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 5%;
+}
+
+.eyebrow {
+  color: var(--gold-primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Floating Component */
+.floating {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.floating b {
+  color: var(--gold-light);
+}
 
 /* =========================================
-   ZIREK LOGO HERO — SAME SIZE AS HERO IMAGE
+   ZIREK LOGO HERO — PREMIUM CANVAS
    ========================================= */
 
-.home-hero-photo{
-  position:relative;
-  width:100%;
-  height:560px;
-  overflow:hidden;
-  border:1px solid #292722;
-  background:
-    radial-gradient(
-      circle at center,
-      #191919 0%,
-      #0c0c0c 62%,
-      #070707 100%
-    );
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 25px 80px rgba(0,0,0,.35);
+.home-hero-photo {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: radial-gradient(
+    circle at center,
+    #191919 0%,
+    #0c0c0c 62%,
+    #070707 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 80px rgba(0,0,0,.5);
 }
 
-.home-hero-photo .zirek-hero-logo{
-  width:82%;
-  height:82%;
-  display:block;
-  object-fit:contain;
-  object-position:center;
-  filter:
-    drop-shadow(0 20px 35px rgba(0,0,0,.65))
-    drop-shadow(0 0 20px rgba(213,173,85,.08));
-  transition:transform .7s cubic-bezier(.2,.7,.2,1);
-  position:relative;
-  z-index:1;
+.home-hero-photo .zirek-hero-logo {
+  width: 82%;
+  height: 82%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 20px 35px rgba(0,0,0,.65))
+          drop-shadow(0 0 20px rgba(213,173,85,.08));
+  transition: transform 0.7s cubic-bezier(.2,.7,.2,1);
+  position: relative;
+  z-index: 1;
 }
 
-.home-hero-photo:hover .zirek-hero-logo{
-  transform:scale(1.035);
+.home-hero-photo:hover .zirek-hero-logo {
+  transform: scale(1.035);
 }
 
-.home-hero-photo::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(
+.home-hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
       circle at center,
       rgba(213,173,85,.06),
       transparent 52%
@@ -70,41 +240,109 @@
       rgba(0,0,0,.02),
       rgba(0,0,0,.30)
     );
-  pointer-events:none;
-  z-index:2;
+  pointer-events: none;
+  z-index: 2;
 }
 
-.home-hero-photo .hero-photo-label{
-  position:absolute;
-  z-index:3;
-  left:24px;
-  bottom:24px;
-  padding:11px 14px;
-  border:1px solid rgba(213,173,85,.65);
-  background:rgba(8,8,8,.78);
-  color:#efd38b;
-  font-size:9px;
-  font-weight:800;
-  letter-spacing:.18em;
-  backdrop-filter:blur(10px);
+.home-hero-photo .hero-photo-label {
+  position: absolute;
+  z-index: 3;
+  left: 24px;
+  bottom: 24px;
+  padding: 11px 14px;
+  border: 1px solid rgba(213,173,85,.65);
+  background: rgba(8,8,8,.85);
+  color: var(--gold-light);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.home-hero-photo .hero-photo-label small{
-  display:block;
-  margin-top:5px;
-  color:#ddd;
-  font-size:8px;
-  font-weight:500;
-  letter-spacing:.1em;
+.home-hero-photo .hero-photo-label small {
+  display: block;
+  margin-top: 5px;
+  color: #ddd;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: .1em;
 }
 
-@media(max-width:560px){
-  .home-hero-photo{
-    height:430px;
+/* Footer Section */
+footer, .footer {
+  border-top: 1px solid var(--border-color);
+  background: #040404;
+  padding: 60px 5% 30px;
+}
+
+.footer-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-grid h4 {
+  color: var(--gold-light);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+}
+
+.footer-grid a {
+  display: block;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-grid a:hover {
+  color: #fff;
+}
+
+.copyright {
+  max-width: 1280px;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  color: var(--text-dim);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .nav {
+    gap: 16px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header, .header {
+    padding: 15px 4%;
+  }
+  
+  .nav {
+    display: none; /* Mobile menu toggled via JS */
   }
 
-  .home-hero-photo .zirek-hero-logo{
-    width:88%;
-    height:82%;
+  .home-hero-photo {
+    height: 380px;
+  }
+
+  .home-hero-photo .zirek-hero-logo {
+    width: 90%;
+    height: 80%;
+  }
+
+  .home-hero-photo .hero-photo-label {
+    left: 12px;
+    bottom: 12px;
   }
 }
