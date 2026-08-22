@@ -4,1069 +4,1078 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>ZIREK | Custom Embroidery UK</title>
+<title>ZIREK CUSTOM — Embroidered Clothing</title>
 
 <meta name="description"
-content="Premium custom embroidery for T-shirts, hoodies, polos, barber uniforms, restaurant workwear, babywear and personalised clothing across the UK.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
-rel="stylesheet">
+content="ZIREK CUSTOM — Premium custom embroidery for barbers, restaurants, businesses, workwear, teams, families and personalised clothing across the UK.">
 
 <style>
 
-/* =========================================================
-   ZIREK CUSTOM EMBROIDERY
-   PREMIUM SHOP
-   ========================================================= */
-
 :root{
-    --black:#070707;
-    --black2:#0c0c0b;
-    --panel:#11110f;
-    --panel2:#151411;
-    --cream:#f4f0e7;
-    --muted:#969087;
-    --muted2:#68635c;
-    --gold:#d5ad55;
-    --gold-light:#efd38b;
-    --line:#292722;
-    --line2:#3a352d;
+--black:#070707;
+--black2:#0d0d0c;
+--panel:#11110f;
+--panel2:#171613;
+--cream:#f4efe5;
+--muted:#999289;
+--gold:#d5ad55;
+--gold2:#f0d58e;
+--line:#292722;
+--line2:#3c372f;
 }
 
 *{
-    box-sizing:border-box;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    margin:0;
-    background:var(--black);
-    color:var(--cream);
-    font-family:Inter,Arial,sans-serif;
-    line-height:1.5;
-}
-
-img{
-    display:block;
-    max-width:100%;
+margin:0;
+background:var(--black);
+color:var(--cream);
+font-family:Inter,Arial,sans-serif;
+line-height:1.5;
 }
 
 a{
-    color:inherit;
-    text-decoration:none;
+color:inherit;
+text-decoration:none;
 }
 
-button,
-input,
-textarea,
-select{
-    font:inherit;
+button{
+font:inherit;
 }
 
-/* =========================================================
-   TOP BAR
-   ========================================================= */
+/* ===============================
+HEADER
+================================ */
 
 .topbar{
-    height:34px;
-    border-bottom:1px solid var(--line);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:0 15px;
-    color:#8e887e;
-    font-size:8px;
-    font-weight:700;
-    letter-spacing:.23em;
-    text-transform:uppercase;
+height:32px;
+border-bottom:1px solid var(--line);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:8px;
+font-weight:800;
+letter-spacing:.22em;
+color:#89837a;
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
-
-.header{
-    width:min(1220px,calc(100% - 50px));
-    min-height:86px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    gap:35px;
-    border-bottom:1px solid var(--line);
+header{
+width:min(1220px,calc(100% - 50px));
+margin:auto;
+min-height:84px;
+display:flex;
+align-items:center;
+gap:35px;
+border-bottom:1px solid var(--line);
 }
 
 .logo{
-    display:flex;
-    flex-direction:column;
-    line-height:.8;
-    font-size:24px;
-    font-weight:900;
-    letter-spacing:.17em;
+font-size:24px;
+font-weight:900;
+letter-spacing:.18em;
+line-height:.8;
+display:flex;
+flex-direction:column;
 }
 
 .logo small{
-    margin-top:10px;
-    color:var(--gold);
-    font-size:6px;
-    letter-spacing:.29em;
+margin-top:10px;
+font-size:6px;
+letter-spacing:.3em;
+color:var(--gold);
 }
 
-.nav{
-    display:flex;
-    align-items:center;
-    gap:27px;
-    margin-left:auto;
+nav{
+margin-left:auto;
+display:flex;
+gap:25px;
 }
 
-.nav a{
-    color:#a39d94;
-    font-size:9px;
-    font-weight:700;
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    transition:.2s;
+nav a{
+font-size:9px;
+font-weight:800;
+letter-spacing:.1em;
+color:#a29c92;
+text-transform:uppercase;
 }
 
-.nav a:hover,
-.nav a.active{
-    color:#fff;
+nav a:hover,
+nav a.active{
+color:#fff;
 }
 
-.header-button{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-height:43px;
-    padding:0 20px;
-    background:var(--gold);
-    color:#090909;
-    font-size:8px;
-    font-weight:900;
-    letter-spacing:.13em;
-    text-transform:uppercase;
-    transition:.25s;
+.quote{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:14px 20px;
+background:var(--gold);
+color:#080808;
+font-size:8px;
+font-weight:900;
+letter-spacing:.14em;
+text-transform:uppercase;
 }
 
-.header-button:hover{
-    background:var(--gold-light);
-    transform:translateY(-1px);
+.quote:hover{
+background:var(--gold2);
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/* ===============================
+HERO
+================================ */
 
 .hero{
-    width:min(1220px,calc(100% - 50px));
-    margin:auto;
-    padding:105px 0 95px;
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    gap:80px;
-    align-items:end;
+width:min(1220px,calc(100% - 50px));
+margin:auto;
+padding:105px 0 95px;
+display:grid;
+grid-template-columns:1.15fr .85fr;
+gap:70px;
+align-items:end;
 }
 
 .eyebrow{
-    margin:0 0 17px;
-    color:var(--gold);
-    font-size:9px;
-    font-weight:900;
-    letter-spacing:.26em;
-    text-transform:uppercase;
+color:var(--gold);
+font-size:8px;
+font-weight:900;
+letter-spacing:.25em;
+text-transform:uppercase;
+margin:0 0 18px;
 }
 
 .hero h1{
-    margin:0;
-    max-width:850px;
-    font-size:clamp(60px,8vw,108px);
-    line-height:.86;
-    letter-spacing:-.075em;
+font-size:clamp(58px,8vw,105px);
+line-height:.87;
+letter-spacing:-.075em;
+margin:0;
 }
 
 .hero h1 em{
-    color:var(--gold-light);
-    font-family:"Playfair Display",Georgia,serif;
-    font-weight:400;
+font-family:Georgia,serif;
+font-weight:400;
+color:var(--gold2);
 }
 
-.hero-description{
-    max-width:600px;
-    margin:30px 0 0;
-    color:#969087;
-    font-size:14px;
-    line-height:1.9;
+.hero p{
+max-width:600px;
+color:#918b82;
+font-size:14px;
+line-height:1.9;
+margin-top:28px;
 }
 
 .hero-actions{
-    display:flex;
-    gap:12px;
-    margin-top:32px;
+display:flex;
+gap:12px;
+margin-top:30px;
 }
 
-.button-gold{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-height:46px;
-    padding:0 22px;
-    background:var(--gold);
-    color:#090909;
-    font-size:8px;
-    font-weight:900;
-    letter-spacing:.14em;
-    text-transform:uppercase;
+.outline{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+border:1px solid #484239;
+padding:14px 20px;
+font-size:8px;
+font-weight:800;
+letter-spacing:.14em;
+text-transform:uppercase;
 }
 
-.button-outline{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-height:46px;
-    padding:0 22px;
-    border:1px solid #4b463e;
-    color:#eee8df;
-    font-size:8px;
-    font-weight:800;
-    letter-spacing:.14em;
-    text-transform:uppercase;
+.outline:hover{
+border-color:var(--gold);
+color:var(--gold2);
 }
 
-.button-outline:hover{
-    border-color:var(--gold);
-    color:var(--gold-light);
+.hero-note{
+border-left:1px solid var(--line);
+padding-left:30px;
 }
 
-.hero-side{
-    border-left:1px solid var(--line);
-    padding-left:35px;
+.hero-note strong{
+font-size:11px;
+letter-spacing:.08em;
 }
 
-.hero-side-title{
-    color:#dcd6cd;
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:.08em;
-    text-transform:uppercase;
+.hero-note p{
+font-size:11px;
+color:#716c64;
+margin-top:15px;
 }
 
-.hero-side p{
-    margin:18px 0 0;
-    color:#777168;
-    font-size:11px;
-    line-height:1.9;
-}
-
-/* =========================================================
-   TRUST STRIP
-   ========================================================= */
+/* ===============================
+TRUST
+================================ */
 
 .trust{
-    border-block:1px solid var(--line);
+border-block:1px solid var(--line);
 }
 
 .trust-inner{
-    width:min(1220px,calc(100% - 50px));
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
+width:min(1220px,calc(100% - 50px));
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
 }
 
-.trust-item{
-    min-height:88px;
-    padding:20px;
-    border-right:1px solid var(--line);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+.trust-box{
+padding:22px;
+border-right:1px solid var(--line);
 }
 
-.trust-item:last-child{
-    border-right:0;
+.trust-box:last-child{
+border-right:0;
 }
 
-.trust-item strong{
-    color:#e8e2d8;
-    font-size:9px;
-    letter-spacing:.08em;
-    text-transform:uppercase;
+.trust-box strong{
+display:block;
+font-size:9px;
+text-transform:uppercase;
+letter-spacing:.1em;
 }
 
-.trust-item span{
-    margin-top:5px;
-    color:#68635c;
-    font-size:9px;
+.trust-box span{
+display:block;
+font-size:9px;
+color:#706a62;
+margin-top:5px;
 }
 
-/* =========================================================
-   COLLECTION HEADER
-   ========================================================= */
+/* ===============================
+SHOP HEADER
+================================ */
 
-.collection{
-    width:min(1220px,calc(100% - 50px));
-    margin:auto;
-    padding:105px 0 50px;
+.shop-head{
+width:min(1220px,calc(100% - 50px));
+margin:auto;
+padding:105px 0 45px;
+display:flex;
+justify-content:space-between;
+align-items:end;
+gap:40px;
 }
 
-.collection-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:end;
-    gap:40px;
+.shop-head h2{
+font-size:55px;
+line-height:.9;
+letter-spacing:-.06em;
+margin:0;
 }
 
-.collection-header h2{
-    margin:0;
-    font-size:56px;
-    line-height:.92;
-    letter-spacing:-.065em;
+.shop-head h2 em{
+font-family:Georgia,serif;
+font-weight:400;
+color:var(--gold2);
 }
 
-.collection-header h2 em{
-    color:var(--gold-light);
-    font-family:"Playfair Display",Georgia,serif;
-    font-weight:400;
+.shop-head p{
+max-width:400px;
+font-size:11px;
+line-height:1.8;
+color:#777168;
 }
 
-.collection-header p{
-    max-width:390px;
-    margin:0;
-    color:#777168;
-    font-size:11px;
-    line-height:1.8;
-}
-
-/* =========================================================
-   CATEGORY FILTER
-   ========================================================= */
-
-.filters{
-    width:min(1220px,calc(100% - 50px));
-    margin:0 auto 45px;
-    display:flex;
-    gap:8px;
-    overflow-x:auto;
-    padding-bottom:3px;
-}
-
-.filter{
-    flex:none;
-    padding:10px 15px;
-    border:1px solid var(--line2);
-    background:transparent;
-    color:#858078;
-    cursor:pointer;
-    font-size:8px;
-    font-weight:800;
-    letter-spacing:.13em;
-    text-transform:uppercase;
-}
-
-.filter:hover,
-.filter.active{
-    border-color:var(--gold);
-    color:var(--gold-light);
-}
-
-/* =========================================================
-   PRODUCT GRID
-   ========================================================= */
+/* ===============================
+PRODUCT GRID
+================================ */
 
 .products{
-    width:min(1220px,calc(100% - 50px));
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:42px 18px;
+width:min(1220px,calc(100% - 50px));
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:45px 18px;
 }
+
+/* ===============================
+PRODUCT CARD
+================================ */
 
 .product{
-    min-width:0;
+min-width:0;
 }
 
-.product-image{
-    position:relative;
-    height:470px;
-    overflow:hidden;
-    background:#141310;
-    border:1px solid var(--line);
+.visual{
+position:relative;
+height:470px;
+overflow:hidden;
+background:
+radial-gradient(circle at 50% 35%,#292722,#0d0d0c 68%);
+border:1px solid var(--line);
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
-.product-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-    transition:
-        transform .7s cubic-bezier(.2,.7,.2,1),
-        filter .5s ease;
-    filter:saturate(.78) contrast(1.05);
+.visual:before{
+content:"";
+position:absolute;
+width:65%;
+height:65%;
+border-radius:50%;
+background:radial-gradient(circle,rgba(213,173,85,.08),transparent 68%);
 }
 
-.product-image::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(0,0,0,.02) 35%,
-            rgba(0,0,0,.72) 100%
-        );
-    pointer-events:none;
+.garment{
+position:relative;
+z-index:2;
+filter:drop-shadow(0 30px 30px #000);
 }
 
-.product:hover .product-image img{
-    transform:scale(1.045);
-    filter:saturate(.98) contrast(1.08);
+/* ===============================
+T-SHIRT
+================================ */
+
+.tshirt{
+width:250px;
+height:310px;
+background:linear-gradient(145deg,#151515,#050505);
+clip-path:polygon(
+20% 10%,
+38% 3%,
+45% 13%,
+55% 13%,
+62% 3%,
+80% 10%,
+100% 28%,
+83% 45%,
+73% 35%,
+73% 100%,
+27% 100%,
+27% 35%,
+17% 45%,
+0 28%
+);
 }
 
-.product-label{
-    position:absolute;
-    left:18px;
-    bottom:18px;
-    z-index:2;
-    padding:8px 10px;
-    border:1px solid rgba(213,173,85,.5);
-    background:rgba(7,7,7,.72);
-    backdrop-filter:blur(8px);
-    color:var(--gold-light);
-    font-size:7px;
-    font-weight:900;
-    letter-spacing:.18em;
-    text-transform:uppercase;
+.tshirt .embroidery{
+top:43%;
 }
 
-.product-info{
-    padding-top:17px;
+/* ===============================
+HOODIE
+================================ */
+
+.hoodie{
+width:270px;
+height:340px;
+background:linear-gradient(145deg,#20201f,#070707);
+border-radius:22px 22px 10px 10px;
+clip-path:polygon(
+25% 5%,
+37% 0,
+50% 11%,
+63% 0,
+75% 5%,
+93% 20%,
+100% 38%,
+82% 43%,
+77% 35%,
+77% 100%,
+23% 100%,
+23% 35%,
+18% 43%,
+0 38%,
+7% 20%
+);
 }
 
-.product-category{
-    color:var(--gold);
-    font-size:7px;
-    font-weight:900;
-    letter-spacing:.2em;
-    text-transform:uppercase;
+.hoodie:after{
+content:"";
+position:absolute;
+width:82px;
+height:50px;
+left:94px;
+top:8px;
+border-radius:50%;
+border:8px solid #292927;
 }
 
-.product-title{
-    margin:7px 0 5px;
-    font-size:17px;
-    line-height:1.2;
-    letter-spacing:-.02em;
+.hoodie .embroidery{
+top:46%;
 }
 
-.product-description{
-    margin:0;
-    color:#716c64;
-    font-size:10px;
-    line-height:1.7;
+/* ===============================
+POLO
+================================ */
+
+.polo{
+width:250px;
+height:320px;
+background:linear-gradient(145deg,#151515,#050505);
+clip-path:polygon(
+22% 7%,
+42% 2%,
+50% 13%,
+58% 2%,
+78% 7%,
+98% 27%,
+83% 43%,
+73% 33%,
+73% 100%,
+27% 100%,
+27% 33%,
+17% 43%,
+2% 27%
+);
 }
 
-.product-bottom{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
-    margin-top:17px;
+.polo:before{
+content:"";
+position:absolute;
+left:92px;
+top:0;
+width:66px;
+height:65px;
+background:#080808;
+clip-path:polygon(0 0,50% 70%,100% 0,82% 0,50% 45%,18% 0);
+}
+
+.polo .embroidery{
+top:42%;
+left:60%;
+}
+
+/* ===============================
+CHEF JACKET
+================================ */
+
+.chef{
+width:255px;
+height:345px;
+background:linear-gradient(90deg,#ece8df,#fff,#d8d2c7);
+border-radius:10px 10px 5px 5px;
+clip-path:polygon(
+20% 4%,
+40% 0,
+50% 12%,
+60% 0,
+80% 4%,
+96% 20%,
+87% 35%,
+76% 27%,
+76% 100%,
+24% 100%,
+24% 27%,
+13% 35%,
+4% 20%
+);
+}
+
+.chef:after{
+content:"";
+position:absolute;
+left:50%;
+top:0;
+height:100%;
+width:3px;
+background:#c8c1b5;
+}
+
+.chef .embroidery{
+color:#9d722d;
+top:45%;
+left:62%;
+}
+
+/* ===============================
+BARBER JACKET
+================================ */
+
+.barber{
+width:265px;
+height:345px;
+background:linear-gradient(145deg,#151515,#030303);
+border-radius:15px 15px 5px 5px;
+clip-path:polygon(
+20% 5%,
+40% 0,
+50% 10%,
+60% 0,
+80% 5%,
+96% 22%,
+86% 39%,
+76% 30%,
+76% 100%,
+24% 100%,
+24% 30%,
+14% 39%,
+4% 22%
+);
+}
+
+.barber .embroidery{
+top:40%;
+}
+
+/* ===============================
+WORKWEAR
+================================ */
+
+.workwear{
+width:270px;
+height:350px;
+background:linear-gradient(145deg,#24303a,#0d141a);
+border-radius:8px;
+clip-path:polygon(
+20% 4%,
+42% 0,
+50% 10%,
+58% 0,
+80% 4%,
+96% 20%,
+87% 40%,
+76% 30%,
+76% 100%,
+24% 100%,
+24% 30%,
+13% 40%,
+4% 20%
+);
+}
+
+.workwear:before,
+.workwear:after{
+content:"";
+position:absolute;
+top:0;
+bottom:0;
+width:3px;
+background:#66717a;
+}
+
+.workwear:before{
+left:28%;
+}
+
+.workwear:after{
+right:28%;
+}
+
+.workwear .embroidery{
+top:43%;
+}
+
+/* ===============================
+BABY TSHIRT
+================================ */
+
+.baby{
+width:185px;
+height:230px;
+background:linear-gradient(145deg,#eee7db,#d5ccbd);
+border-radius:13px;
+clip-path:polygon(
+25% 7%,
+40% 0,
+50% 10%,
+60% 0,
+75% 7%,
+100% 30%,
+82% 43%,
+73% 35%,
+73% 100%,
+27% 100%,
+27% 35%,
+18% 43%,
+0 30%
+);
+}
+
+.baby .embroidery{
+color:#9b6d3b;
+font-size:15px;
+top:47%;
+}
+
+/* ===============================
+BABY HOODIE
+================================ */
+
+.babyhoodie{
+width:200px;
+height:245px;
+background:linear-gradient(145deg,#d5c2aa,#a99076);
+border-radius:25px;
+clip-path:polygon(
+23% 6%,
+40% 0,
+50% 11%,
+60% 0,
+77% 6%,
+96% 23%,
+86% 42%,
+76% 34%,
+76% 100%,
+24% 100%,
+24% 34%,
+14% 42%,
+4% 23%
+);
+}
+
+.babyhoodie .embroidery{
+color:#fff0c9;
+font-size:14px;
+top:48%;
+}
+
+/* ===============================
+CAP
+================================ */
+
+.cap{
+width:240px;
+height:130px;
+background:linear-gradient(145deg,#191919,#050505);
+border-radius:120px 120px 35px 35px;
+margin-top:-60px;
+}
+
+.cap:after{
+content:"";
+position:absolute;
+left:35px;
+bottom:-28px;
+width:180px;
+height:45px;
+background:#080808;
+border-radius:50%;
+transform:skewX(-25deg);
+}
+
+.cap .embroidery{
+top:47px;
+font-size:14px;
+}
+
+/* ===============================
+EMBROIDERY EFFECT
+================================ */
+
+.embroidery{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+z-index:10;
+color:#e3bd69;
+font-family:Georgia,serif;
+font-weight:700;
+font-size:20px;
+letter-spacing:3px;
+white-space:nowrap;
+text-shadow:
+1px 1px 0 #8b642b,
+2px 2px 0 #6b4b20,
+0 0 4px rgba(239,211,139,.25);
+}
+
+.embroidery small{
+display:block;
+font-family:Arial,sans-serif;
+font-size:5px;
+letter-spacing:2px;
+text-align:center;
+margin-top:4px;
+color:#cda759;
+}
+
+/* ===============================
+BADGE
+================================ */
+
+.visual-badge{
+position:absolute;
+left:17px;
+bottom:17px;
+z-index:20;
+padding:8px 10px;
+border:1px solid rgba(213,173,85,.55);
+background:rgba(5,5,5,.75);
+color:var(--gold2);
+font-size:7px;
+font-weight:900;
+letter-spacing:.17em;
+}
+
+/* ===============================
+PRODUCT INFO
+================================ */
+
+.info{
+padding-top:16px;
+}
+
+.category{
+font-size:7px;
+font-weight:900;
+letter-spacing:.2em;
+color:var(--gold);
+text-transform:uppercase;
+}
+
+.info h3{
+font-size:17px;
+margin:7px 0 5px;
+letter-spacing:-.02em;
+}
+
+.info p{
+font-size:10px;
+color:#777168;
+margin:0;
+line-height:1.7;
+}
+
+.bottom{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin-top:16px;
+gap:15px;
 }
 
 .price{
-    color:#e4c77f;
-    font-size:11px;
-    font-weight:800;
+font-size:11px;
+font-weight:800;
+color:#e7c982;
 }
 
 .product-button{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:10px 13px;
-    border:1px solid #474239;
-    color:#e9e3d9;
-    font-size:7px;
-    font-weight:900;
-    letter-spacing:.13em;
-    text-transform:uppercase;
-    transition:.2s;
+border:1px solid #484239;
+padding:10px 13px;
+font-size:7px;
+font-weight:900;
+letter-spacing:.13em;
 }
 
 .product-button:hover{
-    border-color:var(--gold);
-    color:var(--gold-light);
+border-color:var(--gold);
+color:var(--gold2);
 }
 
-/* =========================================================
-   PRODUCT IMAGE CROPS
-   ========================================================= */
-
-.product-tshirt img{
-    object-position:center;
-}
-
-.product-hoodie img{
-    object-position:center;
-}
-
-.product-polo img{
-    object-position:center;
-}
-
-.product-barber img{
-    object-position:center;
-}
-
-.product-restaurant img{
-    object-position:center;
-}
-
-.product-workwear img{
-    object-position:center;
-}
-
-.product-baby img{
-    object-position:center;
-}
-
-.product-personalised img{
-    object-position:center;
-}
-
-.product-cap img{
-    object-position:center;
-}
-
-/* =========================================================
-   FEATURE
-   ========================================================= */
-
-.feature{
-    width:min(1220px,calc(100% - 50px));
-    margin:115px auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    min-height:560px;
-    border:1px solid var(--line);
-    background:#10100e;
-}
-
-.feature-image{
-    min-height:560px;
-    overflow:hidden;
-}
-
-.feature-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.feature-content{
-    padding:70px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-.feature-content h2{
-    margin:0;
-    font-size:55px;
-    line-height:.92;
-    letter-spacing:-.065em;
-}
-
-.feature-content h2 em{
-    color:var(--gold-light);
-    font-family:"Playfair Display",Georgia,serif;
-    font-weight:400;
-}
-
-.feature-content p{
-    max-width:480px;
-    margin:25px 0;
-    color:#858078;
-    font-size:12px;
-    line-height:1.9;
-}
-
-.feature-list{
-    margin:5px 0 30px;
-    padding:0;
-    list-style:none;
-}
-
-.feature-list li{
-    padding:12px 0;
-    border-bottom:1px solid var(--line);
-    color:#b7b0a6;
-    font-size:10px;
-}
-
-.feature-list li::before{
-    content:"✓";
-    margin-right:12px;
-    color:var(--gold);
-}
-
-/* =========================================================
-   BUSINESS SECTION
-   ========================================================= */
+/* ===============================
+BUSINESS FEATURE
+================================ */
 
 .business{
-    border-block:1px solid var(--line);
-    background:#11110f;
+margin-top:120px;
+padding:105px 0;
+background:#11110f;
+border-block:1px solid var(--line);
 }
 
 .business-inner{
-    width:min(1220px,calc(100% - 50px));
-    margin:auto;
-    padding:105px 0;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:80px;
+width:min(1220px,calc(100% - 50px));
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
 }
 
 .business h2{
-    margin:0;
-    font-size:60px;
-    line-height:.9;
-    letter-spacing:-.065em;
+font-size:60px;
+line-height:.9;
+letter-spacing:-.065em;
+margin:0;
 }
 
 .business h2 em{
-    color:var(--gold-light);
-    font-family:"Playfair Display",Georgia,serif;
-    font-weight:400;
+font-family:Georgia,serif;
+font-weight:400;
+color:var(--gold2);
 }
 
-.business-description{
-    max-width:530px;
-    margin:25px 0 30px;
-    color:#89837b;
-    font-size:12px;
-    line-height:1.9;
+.business p{
+max-width:520px;
+color:#888178;
+font-size:12px;
+line-height:1.9;
+margin:25px 0 30px;
 }
 
 .business-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    border-left:1px solid var(--line);
+display:grid;
+grid-template-columns:1fr 1fr;
+border-left:1px solid var(--line);
 }
 
-.business-card{
-    min-height:145px;
-    padding:25px;
-    border-bottom:1px solid var(--line);
-    border-right:1px solid var(--line);
+.business-item{
+padding:28px;
+min-height:140px;
+border-right:1px solid var(--line);
+border-bottom:1px solid var(--line);
 }
 
-.business-number{
-    display:block;
-    color:var(--gold);
-    font-size:8px;
-    font-weight:900;
-    letter-spacing:.15em;
+.business-item span{
+font-size:8px;
+font-weight:900;
+color:var(--gold);
 }
 
-.business-card strong{
-    display:block;
-    margin-top:40px;
-    color:#ddd7cd;
-    font-size:11px;
+.business-item strong{
+display:block;
+margin-top:38px;
+font-size:11px;
 }
 
-/* =========================================================
-   PROCESS
-   ========================================================= */
-
-.process{
-    width:min(1220px,calc(100% - 50px));
-    margin:auto;
-    padding:105px 0;
-}
-
-.process-heading{
-    margin-bottom:50px;
-}
-
-.process-heading h2{
-    margin:0;
-    font-size:55px;
-    line-height:.92;
-    letter-spacing:-.06em;
-}
-
-.process-heading h2 em{
-    color:var(--gold-light);
-    font-family:"Playfair Display",Georgia,serif;
-    font-weight:400;
-}
-
-.process-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    border-top:1px solid var(--line);
-    border-left:1px solid var(--line);
-}
-
-.process-step{
-    min-height:220px;
-    padding:27px;
-    border-right:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-}
-
-.process-number{
-    color:var(--gold);
-    font-size:9px;
-    font-weight:900;
-}
-
-.process-step h3{
-    margin:70px 0 10px;
-    font-size:14px;
-}
-
-.process-step p{
-    margin:0;
-    color:#716c64;
-    font-size:10px;
-    line-height:1.7;
-}
-
-/* =========================================================
-   CTA
-   ========================================================= */
+/* ===============================
+CTA
+================================ */
 
 .cta{
-    padding:130px 20px;
-    border-block:1px solid var(--line);
-    background:
-        radial-gradient(
-            circle at center,
-            #1d170d 0%,
-            #0a0a09 55%,
-            #070707 100%
-        );
-    text-align:center;
-}
-
-.cta .eyebrow{
-    margin-bottom:15px;
+padding:130px 20px;
+text-align:center;
+background:radial-gradient(circle,#1c160c,#070707 65%);
+border-bottom:1px solid var(--line);
 }
 
 .cta h2{
-    margin:0;
-    font-size:clamp(48px,7vw,82px);
-    line-height:.9;
-    letter-spacing:-.07em;
+font-size:65px;
+line-height:.9;
+letter-spacing:-.07em;
+margin:0;
 }
 
 .cta h2 em{
-    color:var(--gold-light);
-    font-family:"Playfair Display",Georgia,serif;
-    font-weight:400;
+font-family:Georgia,serif;
+font-weight:400;
+color:var(--gold2);
 }
 
 .cta p{
-    max-width:560px;
-    margin:25px auto 32px;
-    color:#817b72;
-    font-size:12px;
-    line-height:1.8;
+max-width:520px;
+margin:25px auto 30px;
+color:#827b72;
+font-size:12px;
 }
 
-.cta-actions{
-    display:flex;
-    justify-content:center;
-    gap:10px;
+/* ===============================
+FOOTER
+================================ */
+
+footer{
+width:min(1220px,calc(100% - 50px));
+margin:auto;
+padding:60px 0;
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:50px;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-.footer{
-    width:min(1220px,calc(100% - 50px));
-    margin:auto;
-    padding:65px 0;
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:60px;
+footer h4{
+font-size:8px;
+letter-spacing:.2em;
+color:var(--gold);
+margin:0 0 15px;
 }
 
-.footer-description{
-    max-width:320px;
-    color:#69645d;
-    font-size:10px;
-    line-height:1.8;
+footer a{
+display:block;
+font-size:10px;
+color:#777168;
+margin-top:10px;
 }
 
-.footer-heading{
-    color:var(--gold);
-    font-size:8px;
-    font-weight:900;
-    letter-spacing:.2em;
-    text-transform:uppercase;
+footer a:hover{
+color:#fff;
 }
 
-.footer a:not(.logo){
-    display:block;
-    margin-top:12px;
-    color:#777168;
-    font-size:10px;
-}
-
-.footer a:not(.logo):hover{
-    color:#fff;
+footer p{
+max-width:320px;
+font-size:10px;
+color:#666158;
+line-height:1.8;
 }
 
 .copyright{
-    padding:20px;
-    border-top:1px solid var(--line);
-    color:#514d47;
-    text-align:center;
-    font-size:8px;
-    letter-spacing:.12em;
-    text-transform:uppercase;
+border-top:1px solid var(--line);
+text-align:center;
+padding:20px;
+font-size:8px;
+color:#504c46;
+letter-spacing:.1em;
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/* ===============================
+RESPONSIVE
+================================ */
 
-@media(max-width:950px){
+@media(max-width:900px){
 
-    .header{
-        flex-wrap:wrap;
-        padding:17px 0;
-    }
+header{
+flex-wrap:wrap;
+padding:17px 0;
+}
 
-    .nav{
-        order:3;
-        width:100%;
-        margin:0;
-        overflow-x:auto;
-        padding-bottom:3px;
-    }
+nav{
+order:3;
+width:100%;
+overflow:auto;
+margin:0;
+padding-bottom:4px;
+}
 
-    .nav a{
-        white-space:nowrap;
-    }
+nav a{
+white-space:nowrap;
+}
 
-    .hero{
-        grid-template-columns:1fr;
-        gap:45px;
-        padding:75px 0;
-    }
+.hero{
+grid-template-columns:1fr;
+gap:40px;
+}
 
-    .hero-side{
-        border-left:0;
-        border-top:1px solid var(--line);
-        padding:25px 0 0;
-    }
+.hero-note{
+border-left:0;
+border-top:1px solid var(--line);
+padding:25px 0 0;
+}
 
-    .products{
-        grid-template-columns:1fr 1fr;
-    }
+.products{
+grid-template-columns:1fr 1fr;
+}
 
-    .process-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .feature{
-        grid-template-columns:1fr;
-    }
-
-    .feature-image{
-        min-height:450px;
-    }
-
-    .business-inner{
-        grid-template-columns:1fr;
-    }
+.business-inner{
+grid-template-columns:1fr;
+}
 
 }
 
 @media(max-width:600px){
 
-    .header,
-    .hero,
-    .trust-inner,
-    .collection,
-    .filters,
-    .products,
-    .feature,
-    .business-inner,
-    .process,
-    .footer{
-        width:calc(100% - 30px);
-    }
+header,
+.hero,
+.trust-inner,
+.shop-head,
+.products,
+.business-inner,
+footer{
+width:calc(100% - 30px);
+}
 
-    .header{
-        gap:18px;
-    }
+.hero{
+padding:65px 0;
+}
 
-    .header-button{
-        margin-left:auto;
-    }
+.hero h1{
+font-size:55px;
+}
 
-    .hero{
-        padding:65px 0;
-    }
+.hero-actions{
+flex-direction:column;
+}
 
-    .hero h1{
-        font-size:55px;
-    }
+.trust-inner{
+grid-template-columns:1fr 1fr;
+}
 
-    .hero-actions{
-        flex-direction:column;
-    }
+.trust-box{
+padding:16px;
+}
 
-    .trust-inner{
-        grid-template-columns:1fr 1fr;
-    }
+.shop-head{
+padding-top:75px;
+display:block;
+}
 
-    .trust-item{
-        min-height:92px;
-        padding:16px;
-    }
+.shop-head h2{
+font-size:44px;
+}
 
-    .trust-item:nth-child(2){
-        border-right:0;
-    }
+.shop-head p{
+margin-top:20px;
+}
 
-    .collection{
-        padding:75px 0 35px;
-    }
+.products{
+grid-template-columns:1fr;
+}
 
-    .collection-header{
-        display:block;
-    }
+.visual{
+height:430px;
+}
 
-    .collection-header h2{
-        font-size:43px;
-    }
+.business{
+margin-top:75px;
+}
 
-    .collection-header p{
-        margin-top:20px;
-    }
+.business h2{
+font-size:46px;
+}
 
-    .products{
-        grid-template-columns:1fr;
-    }
+.business-grid{
+grid-template-columns:1fr;
+}
 
-    .product-image{
-        height:440px;
-    }
+.cta{
+padding:90px 20px;
+}
 
-    .feature{
-        margin:75px auto;
-    }
+.cta h2{
+font-size:48px;
+}
 
-    .feature-content{
-        padding:45px 25px;
-    }
-
-    .feature-content h2{
-        font-size:45px;
-    }
-
-    .business-inner{
-        padding:75px 0;
-    }
-
-    .business h2{
-        font-size:46px;
-    }
-
-    .business-grid{
-        grid-template-columns:1fr;
-        border-left:0;
-    }
-
-    .business-card{
-        border-left:1px solid var(--line);
-    }
-
-    .process{
-        padding:75px 0;
-    }
-
-    .process-heading h2{
-        font-size:45px;
-    }
-
-    .process-grid{
-        grid-template-columns:1fr;
-    }
-
-    .cta{
-        padding:90px 20px;
-    }
-
-    .cta-actions{
-        flex-direction:column;
-    }
-
-    .footer{
-        grid-template-columns:1fr;
-        gap:35px;
-        padding:50px 0;
-    }
+footer{
+grid-template-columns:1fr;
+gap:35px;
+}
 
 }
 
 </style>
 </head>
 
+
 <body>
 
-<!-- ======================================================
-     TOP
-     ====================================================== -->
 
 <div class="topbar">
-    PREMIUM CUSTOM EMBROIDERY · UK WIDE · SMALL ORDERS WELCOME
+PREMIUM CUSTOM EMBROIDERY · UK · SMALL ORDERS WELCOME
 </div>
 
 
-<!-- ======================================================
-     HEADER
-     ====================================================== -->
+<header>
 
-<header class="header">
+<a href="index.html" class="logo">
+ZIREK
+<small>CUSTOM EMBROIDERY</small>
+</a>
 
-    <a href="index.html" class="logo">
-        ZIREK
-        <small>CUSTOM EMBROIDERY</small>
-    </a>
+<nav>
 
-    <nav class="nav">
+<a href="index.html">Home</a>
 
-        <a href="index.html">Home</a>
+<a href="shop.html" class="active">
+Shop
+</a>
 
-        <a href="shop.html" class="active">Shop</a>
+<a href="business.html">
+Business
+</a>
 
-        <a href="business.html">Business</a>
+<a href="custom.html">
+Custom
+</a>
 
-        <a href="custom.html">Custom</a>
+<a href="about.html">
+About
+</a>
 
-        <a href="about.html">About</a>
+<a href="contact.html">
+Contact
+</a>
 
-        <a href="contact.html">Contact</a>
+</nav>
 
-    </nav>
-
-    <a href="custom.html" class="header-button">
-        Get A Quote
-    </a>
+<a href="custom.html" class="quote">
+GET A QUOTE
+</a>
 
 </header>
 
@@ -1074,1186 +1083,731 @@ select{
 <main>
 
 
-<!-- ======================================================
-     HERO
-     ====================================================== -->
-
 <section class="hero">
 
-    <div>
+<div>
 
-        <p class="eyebrow">
-            ZIREK COLLECTION
-        </p>
+<p class="eyebrow">
+ZIREK CUSTOM COLLECTION
+</p>
 
-        <h1>
-            Your brand.<br>
-            Your <em>stitch.</em>
-        </h1>
+<h1>
+Your business.<br>
+Your <em>embroidery.</em>
+</h1>
 
-        <p class="hero-description">
-            Premium custom embroidery for businesses,
-            teams, families and personal orders.
-            Choose your garment, send your design
-            and let ZIREK turn it into embroidery.
-        </p>
+<p>
+Professional embroidered clothing created for
+barbers, restaurants, chefs, trades, businesses,
+teams, families and personalised gifts.
+</p>
 
-        <div class="hero-actions">
+<div class="hero-actions">
 
-            <a href="custom.html" class="button-gold">
-                Start A Custom Order
-            </a>
+<a href="custom.html" class="quote">
+START CUSTOM ORDER
+</a>
 
-            <a href="#collection" class="button-outline">
-                Explore Collection
-            </a>
+<a href="#products" class="outline">
+VIEW COLLECTION
+</a>
 
-        </div>
-
-    </div>
-
-
-    <div class="hero-side">
-
-        <p class="hero-side-title">
-            MORE THAN A LOGO
-        </p>
-
-        <p>
-            Professional embroidery gives your clothing
-            a premium, durable finish that stands out
-            from ordinary printed garments.
-        </p>
-
-        <p>
-            Perfect for barbers, restaurants, trades,
-            gyms, teams, family gifts and personalised
-            clothing.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     TRUST
-     ====================================================== -->
-
-<section class="trust">
-
-    <div class="trust-inner">
-
-        <div class="trust-item">
-
-            <strong>
-                Premium Finish
-            </strong>
-
-            <span>
-                Clean & durable embroidery
-            </span>
-
-        </div>
-
-
-        <div class="trust-item">
-
-            <strong>
-                Small Orders
-            </strong>
-
-            <span>
-                Personal orders welcome
-            </span>
-
-        </div>
-
-
-        <div class="trust-item">
-
-            <strong>
-                Business Ready
-            </strong>
-
-            <span>
-                Uniforms & teamwear
-            </span>
-
-        </div>
-
-
-        <div class="trust-item">
-
-            <strong>
-                UK Wide
-            </strong>
-
-            <span>
-                Delivery across the UK
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     COLLECTION INTRO
-     ====================================================== -->
-
-<section class="collection" id="collection">
-
-    <div class="collection-header">
-
-        <div>
-
-            <p class="eyebrow">
-                SHOP BY STYLE
-            </p>
-
-            <h2>
-                Choose your <em>canvas.</em>
-            </h2>
-
-        </div>
-
-        <p>
-            From everyday clothing to professional
-            uniforms and personalised baby gifts.
-            Every piece can be customised.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     FILTERS
-     ====================================================== -->
-
-<div class="filters">
-
-    <button class="filter active" data-filter="all">
-        All
-    </button>
-
-    <button class="filter" data-filter="clothing">
-        Clothing
-    </button>
-
-    <button class="filter" data-filter="business">
-        Business
-    </button>
-
-    <button class="filter" data-filter="barber">
-        Barber
-    </button>
-
-    <button class="filter" data-filter="restaurant">
-        Restaurant
-    </button>
-
-    <button class="filter" data-filter="baby">
-        Babywear
-    </button>
-
-    <button class="filter" data-filter="personalised">
-        Personalised
-    </button>
+</div>
 
 </div>
 
 
-<!-- ======================================================
-     PRODUCTS
-     ====================================================== -->
+<div class="hero-note">
+
+<strong>
+WE DON'T JUST PRINT YOUR LOGO.
+</strong>
+
+<p>
+We create garments designed to look like
+professional branded clothing, with
+ZIREK CUSTOM embroidery shown as the
+example throughout our collection.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="trust">
+
+<div class="trust-inner">
+
+<div class="trust-box">
+<strong>Premium Embroidery</strong>
+<span>Professional stitched finish</span>
+</div>
+
+<div class="trust-box">
+<strong>Business Orders</strong>
+<span>Uniforms & teamwear</span>
+</div>
+
+<div class="trust-box">
+<strong>Personal Orders</strong>
+<span>Names & personalised gifts</span>
+</div>
+
+<div class="trust-box">
+<strong>UK Wide</strong>
+<span>Serving customers across the UK</span>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="shop-head" id="products">
+
+<div>
+
+<p class="eyebrow">
+SHOP ZIREK CUSTOM
+</p>
+
+<h2>
+Made to be<br>
+<em>noticed.</em>
+</h2>
+
+</div>
+
+<p>
+Choose the type of garment you need.
+The ZIREK CUSTOM embroidery shown on
+each product demonstrates how your own
+logo or design can be placed.
+</p>
+
+</section>
+
 
 <section class="products">
 
 
 <!-- T SHIRT -->
 
-<article class="product" data-category="clothing">
+<article class="product">
 
-    <a href="custom.html?product=T-Shirt">
+<div class="visual">
 
-        <div class="product-image product-tshirt">
+<div class="garment tshirt">
 
-            <img
-                src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1200&q=90"
-                alt="Premium embroidered T-shirt"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                CUSTOM EMBROIDERY
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+EMBROIDERED T-SHIRT
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            EVERYDAY WEAR
-        </span>
+<span class="category">
+EVERYDAY BRANDING
+</span>
 
-        <h3 class="product-title">
-            Embroidered T-Shirt
-        </h3>
+<h3>
+Custom Embroidered T-Shirt
+</h3>
 
-        <p class="product-description">
-            Clean chest embroidery for personal,
-            team and business clothing.
-        </p>
+<p>
+Perfect for brands, teams and personal clothing.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £18.00
-            </span>
+<span class="price">
+FROM £18.00
+</span>
 
-            <a
-                href="custom.html?product=T-Shirt"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=T-Shirt"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
 <!-- HOODIE -->
 
-<article class="product" data-category="clothing">
+<article class="product">
 
-    <a href="custom.html?product=Hoodie">
+<div class="visual">
 
-        <div class="product-image product-hoodie">
+<div class="garment hoodie">
 
-            <img
-                src="https://images.pexels.com/photos/9649532/pexels-photo-9649532.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Embroidered hoodie"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                PREMIUM HOODIE
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+PREMIUM HOODIE
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            STREET & BUSINESS
-        </span>
+<span class="category">
+STREET / BUSINESS
+</span>
 
-        <h3 class="product-title">
-            Embroidered Hoodie
-        </h3>
+<h3>
+Custom Embroidered Hoodie
+</h3>
 
-        <p class="product-description">
-            Premium heavyweight-style hoodie
-            with custom embroidery.
-        </p>
+<p>
+A premium everyday garment with your logo.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £28.00
-            </span>
+<span class="price">
+FROM £28.00
+</span>
 
-            <a
-                href="custom.html?product=Hoodie"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Hoodie"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
 <!-- POLO -->
 
-<article class="product" data-category="business">
+<article class="product">
 
-    <a href="custom.html?product=Polo">
+<div class="visual">
 
-        <div class="product-image product-polo">
+<div class="garment polo">
 
-            <img
-                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=90"
-                alt="Custom polo clothing"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                BUSINESS POLO
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+BUSINESS POLO
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            BUSINESS WEAR
-        </span>
+<span class="category">
+BUSINESS
+</span>
 
-        <h3 class="product-title">
-            Embroidered Polo
-        </h3>
+<h3>
+Embroidered Polo
+</h3>
 
-        <p class="product-description">
-            Smart embroidered polos for staff,
-            teams and customer-facing businesses.
-        </p>
+<p>
+Professional branding for staff and teams.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £22.00
-            </span>
+<span class="price">
+FROM £22.00
+</span>
 
-            <a
-                href="custom.html?product=Polo"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Polo"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
 <!-- BARBER -->
 
-<article class="product" data-category="barber">
+<article class="product">
 
-    <a href="custom.html?product=Barber">
+<div class="visual">
 
-        <div class="product-image product-barber">
+<div class="garment barber">
 
-            <img
-                src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=90"
-                alt="Barber uniform and embroidery"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                BARBER COLLECTION
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+BARBER UNIFORM
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            BARBERS & SALONS
-        </span>
+<span class="category">
+BARBERS & SALONS
+</span>
 
-        <h3 class="product-title">
-            Barber Uniform Embroidery
-        </h3>
+<h3>
+Barber Embroidered Uniform
+</h3>
 
-        <p class="product-description">
-            Professional branded clothing designed
-            for modern barbers and salons.
-        </p>
+<p>
+Premium branded clothing for modern barbers.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £20.00
-            </span>
+<span class="price">
+FROM £20.00
+</span>
 
-            <a
-                href="custom.html?product=Barber"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Barber"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
-<!-- RESTAURANT -->
+<!-- CHEF -->
 
-<article class="product" data-category="restaurant">
+<article class="product">
 
-    <a href="custom.html?product=Restaurant">
+<div class="visual">
 
-        <div class="product-image product-restaurant">
+<div class="garment chef">
 
-            <img
-                src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=90"
-                alt="Restaurant uniform"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                RESTAURANT WEAR
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+CHEF / KITCHEN
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            HOSPITALITY
-        </span>
+<span class="category">
+RESTAURANTS
+</span>
 
-        <h3 class="product-title">
-            Restaurant & Chef Embroidery
-        </h3>
+<h3>
+Embroidered Chef Jacket
+</h3>
 
-        <p class="product-description">
-            Branded uniforms for restaurants,
-            cafés, kitchens and hospitality teams.
-        </p>
+<p>
+Branded chef clothing for restaurants and kitchens.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £20.00
-            </span>
+<span class="price">
+FROM £24.00
+</span>
 
-            <a
-                href="custom.html?product=Restaurant"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Chef"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
 <!-- WORKWEAR -->
 
-<article class="product" data-category="business">
+<article class="product">
 
-    <a href="custom.html?product=Workwear">
+<div class="visual">
 
-        <div class="product-image product-workwear">
+<div class="garment workwear">
 
-            <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=90"
-                alt="Professional workwear"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                PROFESSIONAL WORKWEAR
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+PRO WORKWEAR
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            TEAMS & TRADES
-        </span>
+<span class="category">
+TRADES & TEAMS
+</span>
 
-        <h3 class="product-title">
-            Professional Workwear
-        </h3>
+<h3>
+Professional Workwear
+</h3>
 
-        <p class="product-description">
-            Branded clothing for trades,
-            construction, maintenance and teams.
-        </p>
+<p>
+Branded work clothing for your whole team.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                Custom Quote
-            </span>
+<span class="price">
+CUSTOM QUOTE
+</span>
 
-            <a
-                href="custom.html?product=Workwear"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Workwear"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
 <!-- BABY -->
 
-<article class="product" data-category="baby">
+<article class="product">
 
-    <a href="custom.html?product=Babywear">
+<div class="visual">
 
-        <div class="product-image product-baby">
+<div class="garment baby">
 
-            <img
-                src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1200&q=90"
-                alt="Personalised baby clothing"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                BABYWEAR
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+BABYWEAR
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            BABY & GIFTS
-        </span>
+<span class="category">
+BABY GIFTS
+</span>
 
-        <h3 class="product-title">
-            Personalised Babywear
-        </h3>
+<h3>
+Personalised Babywear
+</h3>
 
-        <p class="product-description">
-            Names, initials and special embroidery
-            for beautiful personalised gifts.
-        </p>
+<p>
+Names, initials and special embroidered gifts.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £15.00
-            </span>
+<span class="price">
+FROM £15.00
+</span>
 
-            <a
-                href="custom.html?product=Babywear"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Babywear"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
-<!-- PERSONALISED -->
+<!-- BABY HOODIE -->
 
-<article class="product" data-category="personalised">
+<article class="product">
 
-    <a href="custom.html?product=Personalised">
+<div class="visual">
 
-        <div class="product-image product-personalised">
+<div class="garment babyhoodie">
 
-            <img
-                src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?auto=format&fit=crop&w=1200&q=90"
-                alt="Personalised embroidery"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                MADE PERSONAL
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+BABY HOODIE
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            PERSONALISATION
-        </span>
+<span class="category">
+PERSONALISED
+</span>
 
-        <h3 class="product-title">
-            Names & Initials
-        </h3>
+<h3>
+Personalised Baby Hoodie
+</h3>
 
-        <p class="product-description">
-            Turn ordinary clothing into a unique
-            personalised piece.
-        </p>
+<p>
+A premium personalised gift for little ones.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £15.00
-            </span>
+<span class="price">
+FROM £19.99
+</span>
 
-            <a
-                href="custom.html?product=Personalised"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Baby%20Hoodie"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
-<!-- CAPS -->
+<!-- CAP -->
 
-<article class="product" data-category="business">
+<article class="product">
 
-    <a href="custom.html?product=Caps">
+<div class="visual">
 
-        <div class="product-image product-cap">
+<div class="garment cap">
 
-            <img
-                src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=1200&q=90"
-                alt="Custom embroidered cap"
-                loading="lazy"
-            >
+<div class="embroidery">
+ZIREK
+<small>CUSTOM</small>
+</div>
 
-            <span class="product-label">
-                CUSTOM CAPS
-            </span>
+</div>
 
-        </div>
+<div class="visual-badge">
+EMBROIDERED CAP
+</div>
 
-    </a>
+</div>
 
-    <div class="product-info">
+<div class="info">
 
-        <span class="product-category">
-            HEADWEAR
-        </span>
+<span class="category">
+HEADWEAR
+</span>
 
-        <h3 class="product-title">
-            Embroidered Caps
-        </h3>
+<h3>
+Custom Embroidered Cap
+</h3>
 
-        <p class="product-description">
-            Clean logo embroidery for businesses,
-            teams and personal brands.
-        </p>
+<p>
+Logo embroidery for businesses and personal brands.
+</p>
 
-        <div class="product-bottom">
+<div class="bottom">
 
-            <span class="price">
-                From £15.00
-            </span>
+<span class="price">
+FROM £15.00
+</span>
 
-            <a
-                href="custom.html?product=Caps"
-                class="product-button"
-            >
-                GET A QUOTE
-            </a>
+<a href="custom.html?product=Cap"
+class="product-button">
+GET A QUOTE
+</a>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </article>
 
 
 </section>
 
-
-<!-- ======================================================
-     FEATURE
-     ====================================================== -->
-
-<section class="feature">
-
-    <div class="feature-image">
-
-        <img
-            src="https://images.pexels.com/photos/6256265/pexels-photo-6256265.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Detailed embroidery on fabric"
-            loading="lazy"
-        >
-
-    </div>
-
-
-    <div class="feature-content">
-
-        <p class="eyebrow">
-            THE ZIREK DIFFERENCE
-        </p>
-
-        <h2>
-            You can feel the<br>
-            <em>difference.</em>
-        </h2>
-
-        <p>
-            Embroidery gives your clothing texture,
-            depth and a premium finish that ordinary
-            printed graphics cannot reproduce.
-        </p>
-
-        <ul class="feature-list">
-
-            <li>
-                Professional logo placement
-            </li>
-
-            <li>
-                Clean embroidery finish
-            </li>
-
-            <li>
-                Personal names & initials
-            </li>
-
-            <li>
-                Business uniforms & teamwear
-            </li>
-
-            <li>
-                Small orders welcome
-            </li>
-
-        </ul>
-
-        <a
-            href="custom.html"
-            class="button-gold"
-        >
-            SEND YOUR DESIGN
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     BUSINESS
-     ====================================================== -->
 
 <section class="business">
 
-    <div class="business-inner">
+<div class="business-inner">
 
-        <div>
+<div>
 
-            <p class="eyebrow">
-                BUSINESS EMBROIDERY
-            </p>
+<p class="eyebrow">
+WHO WE MAKE IT FOR
+</p>
 
-            <h2>
-                Make your team<br>
-                <em>recognisable.</em>
-            </h2>
+<h2>
+One machine.<br>
+<em>Every business.</em>
+</h2>
 
-            <p class="business-description">
-                Professional embroidered uniforms help
-                customers instantly recognise your team
-                and make your business look established.
-            </p>
+<p>
+From a local barber to a restaurant team,
+from tradespeople to personalised baby gifts,
+custom embroidery gives your customers
+something they can actually see and feel.
+</p>
 
-            <a
-                href="business.html"
-                class="button-gold"
-            >
-                BUSINESS ORDERS
-            </a>
+<a href="business.html" class="quote">
+BUSINESS ORDERS
+</a>
 
-        </div>
+</div>
 
 
-        <div class="business-grid">
+<div class="business-grid">
 
-            <div class="business-card">
+<div class="business-item">
+<span>01</span>
+<strong>BARBERS</strong>
+</div>
 
-                <span class="business-number">
-                    01
-                </span>
+<div class="business-item">
+<span>02</span>
+<strong>RESTAURANTS</strong>
+</div>
 
-                <strong>
-                    Barbers & Salons
-                </strong>
+<div class="business-item">
+<span>03</span>
+<strong>CHEFS</strong>
+</div>
 
-            </div>
+<div class="business-item">
+<span>04</span>
+<strong>TRADES</strong>
+</div>
 
+<div class="business-item">
+<span>05</span>
+<strong>GYMS & TEAMS</strong>
+</div>
 
-            <div class="business-card">
+<div class="business-item">
+<span>06</span>
+<strong>FAMILIES & GIFTS</strong>
+</div>
 
-                <span class="business-number">
-                    02
-                </span>
+</div>
 
-                <strong>
-                    Restaurants & Cafés
-                </strong>
-
-            </div>
-
-
-            <div class="business-card">
-
-                <span class="business-number">
-                    03
-                </span>
-
-                <strong>
-                    Trades & Construction
-                </strong>
-
-            </div>
-
-
-            <div class="business-card">
-
-                <span class="business-number">
-                    04
-                </span>
-
-                <strong>
-                    Gyms & Fitness
-                </strong>
-
-            </div>
-
-
-            <div class="business-card">
-
-                <span class="business-number">
-                    05
-                </span>
-
-                <strong>
-                    Clubs & Teams
-                </strong>
-
-            </div>
-
-
-            <div class="business-card">
-
-                <span class="business-number">
-                    06
-                </span>
-
-                <strong>
-                    Small Businesses
-                </strong>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-
-<!-- ======================================================
-     PROCESS
-     ====================================================== -->
-
-<section class="process">
-
-    <div class="process-heading">
-
-        <p class="eyebrow">
-            SIMPLE PROCESS
-        </p>
-
-        <h2>
-            From idea to<br>
-            <em>stitch.</em>
-        </h2>
-
-    </div>
-
-
-    <div class="process-grid">
-
-        <div class="process-step">
-
-            <span class="process-number">
-                01
-            </span>
-
-            <h3>
-                Choose Your Garment
-            </h3>
-
-            <p>
-                Pick a T-shirt, hoodie, polo,
-                workwear or personalised piece.
-            </p>
-
-        </div>
-
-
-        <div class="process-step">
-
-            <span class="process-number">
-                02
-            </span>
-
-            <h3>
-                Send Your Design
-            </h3>
-
-            <p>
-                Upload your logo, name,
-                artwork or embroidery idea.
-            </p>
-
-        </div>
-
-
-        <div class="process-step">
-
-            <span class="process-number">
-                03
-            </span>
-
-            <h3>
-                Get Your Quote
-            </h3>
-
-            <p>
-                We review your requirements
-                and prepare your custom quote.
-            </p>
-
-        </div>
-
-
-        <div class="process-step">
-
-            <span class="process-number">
-                04
-            </span>
-
-            <h3>
-                We Embroider
-            </h3>
-
-            <p>
-                Your approved design is turned
-                into a finished embroidered garment.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ======================================================
-     CTA
-     ====================================================== -->
 
 <section class="cta">
 
-    <p class="eyebrow">
-        READY WHEN YOU ARE
-    </p>
+<p class="eyebrow">
+YOUR LOGO. YOUR CLOTHING.
+</p>
 
-    <h2>
-        Put your idea<br>
-        <em>on fabric.</em>
-    </h2>
+<h2>
+Let's put your<br>
+<em>brand in stitches.</em>
+</h2>
 
-    <p>
-        Tell us what you want embroidered
-        and we'll help you choose the right garment.
-    </p>
+<p>
+Send your logo, choose your garment
+and request a custom embroidery quote.
+</p>
 
-    <div class="cta-actions">
-
-        <a
-            href="custom.html"
-            class="button-gold"
-        >
-            START CUSTOM ORDER
-        </a>
-
-        <a
-            href="contact.html"
-            class="button-outline"
-        >
-            CONTACT ZIREK
-        </a>
-
-    </div>
+<a href="custom.html" class="quote">
+START CUSTOM ORDER
+</a>
 
 </section>
 
 
-</main>
-
-
-<!-- ======================================================
-     FOOTER
-     ====================================================== -->
-
 <footer>
 
-    <div class="footer">
+<div>
 
-        <div>
+<a href="index.html" class="logo">
+ZIREK
+<small>CUSTOM EMBROIDERY</small>
+</a>
 
-            <a href="index.html" class="logo">
-                ZIREK
-                <small>CUSTOM EMBROIDERY</small>
-            </a>
+<p>
+Premium custom embroidery for businesses,
+teams, families and personal orders across the UK.
+</p>
 
-            <p class="footer-description">
-                Premium custom embroidery for businesses,
-                teams, families and personal orders
-                across the UK.
-            </p>
-
-        </div>
+</div>
 
 
-        <div>
+<div>
 
-            <div class="footer-heading">
-                Explore
-            </div>
+<h4>EXPLORE</h4>
 
-            <a href="index.html">
-                Home
-            </a>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="business.html">Business</a>
+<a href="custom.html">Custom</a>
 
-            <a href="shop.html">
-                Shop
-            </a>
-
-            <a href="business.html">
-                Business
-            </a>
-
-            <a href="custom.html">
-                Custom
-            </a>
-
-        </div>
+</div>
 
 
-        <div>
+<div>
 
-            <div class="footer-heading">
-                Contact
-            </div>
+<h4>CONTACT</h4>
 
-            <a href="contact.html">
-                Contact Us
-            </a>
+<a href="contact.html">Contact</a>
+<a href="custom.html">Get A Quote</a>
+<a href="about.html">About</a>
 
-            <a href="custom.html">
-                Get A Quote
-            </a>
-
-            <a href="about.html">
-                About ZIREK
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="copyright">
-        © 2026 ZIREK Custom Embroidery · UK
-    </div>
+</div>
 
 </footer>
 
 
-<!-- ======================================================
-     FILTER JAVASCRIPT
-     ====================================================== -->
-
-<script>
-
-const filters =
-document.querySelectorAll(".filter");
-
-const products =
-document.querySelectorAll(".product");
-
-
-filters.forEach(filter => {
-
-    filter.addEventListener("click", () => {
-
-        filters.forEach(item => {
-            item.classList.remove("active");
-        });
-
-        filter.classList.add("active");
-
-        const selected =
-        filter.dataset.filter;
-
-        products.forEach(product => {
-
-            const category =
-            product.dataset.category;
-
-            if(
-                selected === "all" ||
-                category === selected
-            ){
-
-                product.style.display = "";
-
-            }else{
-
-                product.style.display = "none";
-
-            }
-
-        });
-
-    });
-
-});
-
-</script>
+<div class="copyright">
+© 2026 ZIREK CUSTOM EMBROIDERY · UK
+</div>
 
 
 </body>
