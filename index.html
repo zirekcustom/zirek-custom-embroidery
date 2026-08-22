@@ -3,18 +3,468 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ZIREK Custom Embroidery — premium custom embroidery for businesses, teams and personal orders across the UK.">
-  <title>ZIREK — Custom Embroidery</title>
+
+  <meta name="description"
+        content="ZIREK Custom Embroidery — professional embroidered clothing for barbers, restaurants, chefs, businesses, teams and personalised orders across the UK.">
+
+  <meta name="theme-color" content="#080808">
+
+  <title>ZIREK — Premium Custom Embroidery UK</title>
+
   <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+
+    /* =========================================
+       ZIREK HOME — PROFESSIONAL VISUAL UPGRADE
+       ========================================= */
+
+    .home-hero-photo{
+      position:relative;
+      width:100%;
+      height:560px;
+      overflow:hidden;
+      border:1px solid #292722;
+      background:#111;
+      box-shadow:0 25px 80px rgba(0,0,0,.35);
+    }
+
+    .home-hero-photo img{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:cover;
+      object-position:center;
+      filter:saturate(.88) contrast(1.06);
+      transition:transform .8s ease;
+    }
+
+    .home-hero-photo:hover img{
+      transform:scale(1.035);
+    }
+
+    .home-hero-photo::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,.05) 25%,
+          rgba(0,0,0,.72) 100%
+        );
+      pointer-events:none;
+    }
+
+    .hero-photo-label{
+      position:absolute;
+      z-index:3;
+      left:24px;
+      bottom:24px;
+      padding:11px 14px;
+      border:1px solid rgba(213,173,85,.65);
+      background:rgba(8,8,8,.78);
+      color:#efd38b;
+      font-size:9px;
+      font-weight:800;
+      letter-spacing:.18em;
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-photo-label small{
+      display:block;
+      margin-top:5px;
+      color:#ddd;
+      font-size:8px;
+      font-weight:500;
+      letter-spacing:.1em;
+    }
+
+    .home-intro{
+      max-width:760px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .home-intro p{
+      max-width:650px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .visual-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin-top:42px;
+    }
+
+    .visual-card{
+      position:relative;
+      display:block;
+      min-height:390px;
+      overflow:hidden;
+      background:#111;
+      border:1px solid #292722;
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .visual-card img{
+      width:100%;
+      height:390px;
+      display:block;
+      object-fit:cover;
+      transition:
+        transform .65s cubic-bezier(.2,.7,.2,1),
+        filter .65s ease;
+      filter:saturate(.84) contrast(1.04);
+    }
+
+    .visual-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,.04) 30%,
+          rgba(0,0,0,.86) 100%
+        );
+      pointer-events:none;
+    }
+
+    .visual-card:hover img{
+      transform:scale(1.055);
+      filter:saturate(1) contrast(1.06);
+    }
+
+    .visual-info{
+      position:absolute;
+      z-index:2;
+      left:20px;
+      right:20px;
+      bottom:20px;
+    }
+
+    .visual-tag{
+      display:inline-block;
+      margin-bottom:9px;
+      padding:6px 8px;
+      border:1px solid rgba(213,173,85,.55);
+      color:#efd38b;
+      background:rgba(8,8,8,.65);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.15em;
+    }
+
+    .visual-info h3{
+      margin:0 0 5px;
+      color:#fff;
+      font-size:18px;
+    }
+
+    .visual-info p{
+      margin:0;
+      color:#c7c7c7;
+      font-size:11px;
+      line-height:1.55;
+    }
+
+    .brand-strip{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      border-top:1px solid #292722;
+      border-bottom:1px solid #292722;
+      margin-top:70px;
+    }
+
+    .brand-strip div{
+      padding:26px 20px;
+      text-align:center;
+      border-right:1px solid #292722;
+    }
+
+    .brand-strip div:last-child{
+      border-right:0;
+    }
+
+    .brand-strip b{
+      display:block;
+      color:#efd38b;
+      font-size:9px;
+      letter-spacing:.16em;
+      margin-bottom:8px;
+    }
+
+    .brand-strip span{
+      color:#aaa;
+      font-size:11px;
+    }
+
+    .process-premium{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:40px;
+    }
+
+    .process-card{
+      padding:34px;
+      border:1px solid #292722;
+      background:#101010;
+      min-height:220px;
+    }
+
+    .process-number{
+      color:#d5ad55;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.18em;
+    }
+
+    .process-card h3{
+      margin:22px 0 10px;
+      color:#fff;
+    }
+
+    .process-card p{
+      color:#999;
+      line-height:1.7;
+      font-size:13px;
+    }
+
+    .category-section{
+      background:#0c0c0c;
+      padding:100px 5vw;
+      border-top:1px solid #222;
+      border-bottom:1px solid #222;
+    }
+
+    .category-wrap{
+      max-width:1250px;
+      margin:0 auto;
+    }
+
+    .category-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-top:42px;
+    }
+
+    .category-card{
+      padding:32px;
+      min-height:210px;
+      border:1px solid #292722;
+      background:
+        linear-gradient(
+          145deg,
+          #151515,
+          #0c0c0c
+        );
+      text-decoration:none;
+      color:#fff;
+      transition:
+        transform .3s ease,
+        border-color .3s ease;
+    }
+
+    .category-card:hover{
+      transform:translateY(-5px);
+      border-color:#d5ad55;
+    }
+
+    .category-card span{
+      color:#d5ad55;
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.18em;
+    }
+
+    .category-card h3{
+      margin:17px 0 9px;
+      font-size:22px;
+    }
+
+    .category-card p{
+      color:#999;
+      font-size:12px;
+      line-height:1.6;
+      margin:0;
+    }
+
+    .trust-section{
+      padding:90px 5vw;
+    }
+
+    .trust-grid{
+      max-width:1150px;
+      margin:40px auto 0;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:15px;
+    }
+
+    .trust-card{
+      padding:28px 22px;
+      text-align:center;
+      border:1px solid #292722;
+      background:#101010;
+    }
+
+    .trust-card strong{
+      display:block;
+      color:#efd38b;
+      font-size:11px;
+      letter-spacing:.1em;
+      margin-bottom:10px;
+    }
+
+    .trust-card span{
+      color:#999;
+      font-size:11px;
+      line-height:1.55;
+    }
+
+    .morgan-feature{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      min-height:520px;
+      border-top:1px solid #292722;
+      border-bottom:1px solid #292722;
+      background:#0d0d0d;
+    }
+
+    .morgan-feature img{
+      width:100%;
+      height:100%;
+      min-height:520px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .morgan-content{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:70px;
+    }
+
+    .morgan-content h2{
+      font-size:clamp(38px,5vw,70px);
+      line-height:.98;
+      margin:10px 0 22px;
+    }
+
+    .morgan-content p{
+      max-width:520px;
+      color:#999;
+      line-height:1.8;
+    }
+
+    .quote-box{
+      max-width:900px;
+      margin:0 auto;
+      padding:70px 30px;
+      text-align:center;
+    }
+
+    .quote-box h2{
+      font-size:clamp(40px,6vw,78px);
+      line-height:.95;
+      margin:12px 0 25px;
+    }
+
+    @media(max-width:900px){
+
+      .visual-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .category-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .brand-strip{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .brand-strip div:nth-child(2){
+        border-right:0;
+      }
+
+      .brand-strip div:nth-child(-n+2){
+        border-bottom:1px solid #292722;
+      }
+
+      .morgan-feature{
+        grid-template-columns:1fr;
+      }
+
+      .morgan-content{
+        padding:55px 30px;
+      }
+
+    }
+
+    @media(max-width:560px){
+
+      .home-hero-photo{
+        height:430px;
+      }
+
+      .visual-grid,
+      .category-grid,
+      .process-premium,
+      .trust-grid{
+        grid-template-columns:1fr;
+      }
+
+      .visual-card,
+      .visual-card img{
+        height:430px;
+      }
+
+      .brand-strip{
+        grid-template-columns:1fr;
+      }
+
+      .brand-strip div{
+        border-right:0;
+        border-bottom:1px solid #292722;
+      }
+
+      .brand-strip div:last-child{
+        border-bottom:0;
+      }
+
+      .morgan-feature img{
+        min-height:420px;
+      }
+
+      .morgan-content{
+        padding:45px 22px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
   <div class="top">
-    PREMIUM CUSTOM EMBROIDERY • UK WIDE
+    PREMIUM CUSTOM EMBROIDERY • UK WIDE • SMALL ORDERS WELCOME
   </div>
 
   <header>
+
     <a class="logo" href="index.html">
       ZIREK
       <small>CUSTOM EMBROIDERY</small>
@@ -28,17 +478,26 @@
       <a href="contact.html">CONTACT</a>
     </nav>
 
-    <a class="btn gold" href="custom.html">GET A QUOTE</a>
+    <a class="btn gold" href="custom.html">
+      GET A QUOTE
+    </a>
+
   </header>
 
 
   <main>
 
-    <!-- HERO -->
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
     <section class="hero">
+
       <div class="hero-content">
 
-        <p class="eyebrow">YOUR BRAND • PERFECTLY STITCHED</p>
+        <p class="eyebrow">
+          YOUR BRAND • PERFECTLY STITCHED
+        </p>
 
         <h1>
           Embroidery<br>
@@ -47,90 +506,680 @@
         </h1>
 
         <p class="lead">
-          Premium embroidered clothing for barbers, restaurants,
-          gyms, teams, small businesses and personal orders.
+          Professional embroidered clothing for barbers,
+          restaurants, chefs, gyms, teams, businesses
+          and personalised orders across the UK.
         </p>
 
         <div class="actions">
-          <a class="btn gold" href="custom.html">UPLOAD YOUR LOGO</a>
-          <a class="btn outline" href="shop.html">EXPLORE COLLECTION</a>
+
+          <a class="btn gold" href="custom.html">
+            START YOUR ORDER
+          </a>
+
+          <a class="btn outline" href="shop.html">
+            EXPLORE COLLECTION
+          </a>
+
         </div>
 
         <p class="ticks">
-          ✓ SMALL ORDERS &nbsp;&nbsp; ✓ BUSINESS ORDERS &nbsp;&nbsp; ✓ UK WIDE
+          ✓ SMALL ORDERS
+          &nbsp;&nbsp;
+          ✓ BUSINESS ORDERS
+          &nbsp;&nbsp;
+          ✓ UK WIDE
         </p>
 
       </div>
 
+
       <div class="hero-art">
-        <div class="orb"></div>
 
-        <div class="garment">
-          ZIREK
-          <small>CUSTOM EMBROIDERY</small>
+        <div class="home-hero-photo">
+
+          <img
+            src="assets/products/golden-scissors-hero.jpg"
+            alt="Golden Scissors professional embroidered barber clothing">
+
+          <div class="hero-photo-label">
+            GOLDEN SCISSORS
+            <small>PROFESSIONAL BARBER EMBROIDERY</small>
+          </div>
+
         </div>
 
-        <div class="floating">
-          <b>YOUR LOGO</b><br>
-          Turned into embroidery.
-        </div>
       </div>
+
     </section>
 
 
-    <!-- TICKER -->
-    <div class="ticker">
-      T-SHIRTS • HOODIES • POLOS • WORKWEAR • PERSONALISATION • BUSINESS • TEAMS
+    <!-- =========================================
+         BRAND STRIP
+         ========================================= -->
+
+    <div class="brand-strip">
+
+      <div>
+        <b>BARBERS</b>
+        <span>Professional uniforms</span>
+      </div>
+
+      <div>
+        <b>RESTAURANTS</b>
+        <span>Chef & hospitality wear</span>
+      </div>
+
+      <div>
+        <b>BUSINESS</b>
+        <span>Staff & workwear</span>
+      </div>
+
+      <div>
+        <b>PERSONALISED</b>
+        <span>Names, gifts & special pieces</span>
+      </div>
+
     </div>
 
 
-    <!-- COLLECTION -->
+    <!-- =========================================
+         COLLECTION
+         ========================================= -->
+
     <section class="section">
 
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">THE COLLECTION</p>
-          <h2>Made for <i>your world.</i></h2>
-        </div>
+      <div class="home-intro">
 
-        <a class="gold-link" href="shop.html">VIEW ALL →</a>
-      </div>
+        <p class="eyebrow">
+          MADE FOR YOUR WORLD
+        </p>
 
-      <div class="grid four">
+        <h2>
+          Your logo.
+          <i>Your garment.</i>
+        </h2>
 
-        <a class="product" href="custom.html">
-          <div class="mock tee tall">01</div>
-          <h3>Embroidered T-Shirt</h3>
-          <p>From £24.99 · Custom quote</p>
-        </a>
-
-        <a class="product" href="custom.html">
-          <div class="mock hoodie">02</div>
-          <h3>Embroidered Hoodie</h3>
-          <p>From £34.99 · Custom quote</p>
-        </a>
-
-        <a class="product" href="custom.html">
-          <div class="mock polo">03</div>
-          <h3>Embroidered Polo</h3>
-          <p>From £27.99 · Custom quote</p>
-        </a>
-
-        <a class="product" href="custom.html">
-          <div class="mock long">04</div>
-          <h3>Workwear</h3>
-          <p>Built for teams · Custom quote</p>
-        </a>
+        <p>
+          From professional barber uniforms to chef jackets,
+          restaurant aprons, business workwear and personalised
+          baby clothing — we turn your design into embroidery
+          that looks built into the garment.
+        </p>
 
       </div>
+
+
+      <div class="visual-grid">
+
+        <!-- BARBER -->
+
+        <a class="visual-card" href="custom.html">
+
+          <img
+            src="assets/products/golden-scissors-jacket.jpg"
+            alt="Golden Scissors embroidered barber jacket">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              BARBER
+            </span>
+
+            <h3>
+              Golden Scissors
+            </h3>
+
+            <p>
+              Professional barber jackets with
+              premium embroidered branding.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <!-- CHEF -->
+
+        <a class="visual-card" href="custom.html">
+
+          <img
+            src="assets/products/zirek-chef-jacket.jpg"
+            alt="ZIREK embroidered chef jacket">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              HOSPITALITY
+            </span>
+
+            <h3>
+              Chef & Restaurant
+            </h3>
+
+            <p>
+              Clean, professional embroidered
+              uniforms for hospitality teams.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <!-- WORKWEAR -->
+
+        <a class="visual-card" href="custom.html">
+
+          <img
+            src="assets/products/zirek-workwear-shirt.jpg"
+            alt="ZIREK embroidered workwear shirt">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              BUSINESS
+            </span>
+
+            <h3>
+              Workwear
+            </h3>
+
+            <p>
+              Put your company identity on
+              professional everyday workwear.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <!-- PERSONAL -->
+
+        <a class="visual-card" href="custom.html">
+
+          <img
+            src="assets/products/morgan-babywear.jpg"
+            alt="Morgan personalised embroidered baby clothing">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              PERSONALISED
+            </span>
+
+            <h3>
+              Morgan
+            </h3>
+
+            <p>
+              Personalised baby clothing with
+              names embroidered by hand-style design.
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
     </section>
 
 
-    <!-- BUSINESS -->
+    <!-- =========================================
+         BUSINESS
+         ========================================= -->
+
+    <section class="category-section">
+
+      <div class="category-wrap">
+
+        <p class="eyebrow">
+          WHO WE WORK WITH
+        </p>
+
+        <h2>
+          Built for <i>business.</i>
+        </h2>
+
+
+        <div class="category-grid">
+
+          <a class="category-card" href="business.html">
+
+            <span>01 / BARBERS</span>
+
+            <h3>
+              Barber Uniforms
+            </h3>
+
+            <p>
+              Jackets, polos, aprons, caps and
+              professional embroidered branding.
+            </p>
+
+          </a>
+
+
+          <a class="category-card" href="business.html">
+
+            <span>02 / RESTAURANTS</span>
+
+            <h3>
+              Chef & Hospitality
+            </h3>
+
+            <p>
+              Chef jackets, aprons and team clothing
+              finished with your business identity.
+            </p>
+
+          </a>
+
+
+          <a class="category-card" href="business.html">
+
+            <span>03 / BUSINESS</span>
+
+            <h3>
+              Staff Workwear
+            </h3>
+
+            <p>
+              Professional uniforms for small
+              businesses, teams and growing brands.
+            </p>
+
+          </a>
+
+
+          <a class="category-card" href="business.html">
+
+            <span>04 / TEAMS</span>
+
+            <h3>
+              Team Clothing
+            </h3>
+
+            <p>
+              Matching embroidered garments for
+              teams, clubs and organisations.
+            </p>
+
+          </a>
+
+
+          <a class="category-card" href="custom.html">
+
+            <span>05 / PERSONAL</span>
+
+            <h3>
+              Personalised Clothing
+            </h3>
+
+            <p>
+              Names, initials and special designs
+              for gifts and personal orders.
+            </p>
+
+          </a>
+
+
+          <a class="category-card" href="custom.html">
+
+            <span>06 / CUSTOM</span>
+
+            <h3>
+              Your Own Design
+            </h3>
+
+            <p>
+              Have something different in mind?
+              Send us your design for a custom quote.
+            </p>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         REAL PRODUCT SHOWCASE
+         ========================================= -->
+
+    <section class="section">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            THE ZIREK COLLECTION
+          </p>
+
+          <h2>
+            Embroidery you can <i>see.</i>
+          </h2>
+
+        </div>
+
+        <a class="gold-link" href="shop.html">
+          VIEW ALL →
+        </a>
+
+      </div>
+
+
+      <div class="visual-grid">
+
+        <a class="visual-card" href="shop.html">
+
+          <img
+            src="assets/products/golden-scissors-polo.jpg"
+            alt="Golden Scissors embroidered polo">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              BARBER
+            </span>
+
+            <h3>
+              Golden Scissors Polo
+            </h3>
+
+            <p>
+              Premium embroidered barber uniform.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a class="visual-card" href="shop.html">
+
+          <img
+            src="assets/products/golden-scissors-apron.jpg"
+            alt="Golden Scissors embroidered barber apron">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              BARBER
+            </span>
+
+            <h3>
+              Golden Scissors Apron
+            </h3>
+
+            <p>
+              Professional apron with embroidered branding.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a class="visual-card" href="shop.html">
+
+          <img
+            src="assets/products/zirek-restaurant-apron.jpg"
+            alt="ZIREK embroidered restaurant apron">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              RESTAURANT
+            </span>
+
+            <h3>
+              ZIREK Restaurant Apron
+            </h3>
+
+            <p>
+              Premium hospitality workwear.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a class="visual-card" href="shop.html">
+
+          <img
+            src="assets/products/zirek-hoodie.jpg"
+            alt="ZIREK embroidered hoodie">
+
+          <div class="visual-info">
+
+            <span class="visual-tag">
+              PERSONAL
+            </span>
+
+            <h3>
+              ZIREK Hoodie
+            </h3>
+
+            <p>
+              Premium everyday embroidered clothing.
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MORGAN FEATURE
+         ========================================= -->
+
+    <section class="morgan-feature">
+
+      <img
+        src="assets/products/morgan-babywear.jpg"
+        alt="Morgan personalised babywear">
+
+      <div class="morgan-content">
+
+        <p class="eyebrow">
+          PERSONALISATION
+        </p>
+
+        <h2>
+          Made personal.<br>
+          <i>Made to keep.</i>
+        </h2>
+
+        <p>
+          Add a name, initials or special design to
+          babywear, gifts and personal garments.
+          Morgan is one example of how we can turn
+          a simple garment into something unique.
+        </p>
+
+        <div class="actions">
+
+          <a class="btn gold" href="custom.html">
+            PERSONALISE AN ITEM
+          </a>
+
+          <a class="btn outline" href="shop.html">
+            SHOP COLLECTION
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         PROCESS
+         ========================================= -->
+
+    <section class="section">
+
+      <div class="home-intro">
+
+        <p class="eyebrow">
+          FROM IDEA TO GARMENT
+        </p>
+
+        <h2>
+          Simple from <i>start to stitch.</i>
+        </h2>
+
+        <p>
+          No complicated process. Tell us what you need,
+          send your logo and we prepare your garment for
+          professional embroidery.
+        </p>
+
+      </div>
+
+
+      <div class="process-premium">
+
+        <article class="process-card">
+
+          <span class="process-number">
+            STEP 01
+          </span>
+
+          <h3>
+            Send your logo
+          </h3>
+
+          <p>
+            Upload your logo, artwork, name or design.
+            Tell us which garment you want and how many
+            pieces you need.
+          </p>
+
+        </article>
+
+
+        <article class="process-card">
+
+          <span class="process-number">
+            STEP 02
+          </span>
+
+          <h3>
+            We prepare it
+          </h3>
+
+          <p>
+            Your artwork is prepared specifically for
+            embroidery so the final stitching looks
+            clean, sharp and professional.
+          </p>
+
+        </article>
+
+
+        <article class="process-card">
+
+          <span class="process-number">
+            STEP 03
+          </span>
+
+          <h3>
+            We stitch it
+          </h3>
+
+          <p>
+            Once the details are approved, your garment
+            is embroidered and prepared for delivery
+            or collection.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         TRUST
+         ========================================= -->
+
+    <section class="trust-section">
+
+      <div class="home-intro">
+
+        <p class="eyebrow">
+          WHY ZIREK
+        </p>
+
+        <h2>
+          Professional by <i>design.</i>
+        </h2>
+
+      </div>
+
+
+      <div class="trust-grid">
+
+        <div class="trust-card">
+          <strong>SMALL ORDERS</strong>
+          <span>
+            No need for a huge minimum order.
+          </span>
+        </div>
+
+        <div class="trust-card">
+          <strong>BUSINESS READY</strong>
+          <span>
+            Uniforms and branded clothing for teams.
+          </span>
+        </div>
+
+        <div class="trust-card">
+          <strong>PERSONALISED</strong>
+          <span>
+            Names, logos and custom designs.
+          </span>
+        </div>
+
+        <div class="trust-card">
+          <strong>UK WIDE</strong>
+          <span>
+            Custom embroidery for customers across the UK.
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         BUSINESS CTA
+         ========================================= -->
+
     <section class="dark">
 
       <div>
-        <p class="eyebrow">BUILT FOR BUSINESS</p>
+
+        <p class="eyebrow">
+          READY FOR YOUR BRAND?
+        </p>
 
         <h2>
           Your logo.<br>
@@ -138,111 +1187,150 @@
         </h2>
 
         <p>
-          Professional embroidered clothing without needing a huge
-          minimum order. Perfect for barbers, restaurants, gyms,
-          trades, teams and growing businesses.
+          Give your team a professional look with
+          embroidered clothing made around your brand.
         </p>
 
-        <a class="btn gold" href="business.html">BUSINESS ORDERS</a>
+        <div class="actions">
+
+          <a class="btn gold" href="business.html">
+            BUSINESS ORDERS
+          </a>
+
+          <a class="btn outline" href="custom.html">
+            GET A CUSTOM QUOTE
+          </a>
+
+        </div>
+
       </div>
+
 
       <div class="checks">
+
         <p>✓ Logo embroidery</p>
         <p>✓ Staff uniforms</p>
+        <p>✓ Barber clothing</p>
+        <p>✓ Chef & restaurant wear</p>
         <p>✓ Workwear</p>
-        <p>✓ Team clothing</p>
-        <p>✓ Small business orders</p>
+        <p>✓ Personalised clothing</p>
+
       </div>
 
     </section>
 
 
-    <!-- PROCESS -->
-    <section class="section">
+    <!-- =========================================
+         FINAL CTA
+         ========================================= -->
 
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">HOW IT WORKS</p>
-          <h2>Simple from <i>start to stitch.</i></h2>
-        </div>
-      </div>
-
-      <div class="grid three process">
-
-        <article>
-          <b>01</b>
-          <h3>Send your logo</h3>
-          <p>
-            Upload your logo, artwork or design and tell us what
-            you want embroidered.
-          </p>
-        </article>
-
-        <article>
-          <b>02</b>
-          <h3>We prepare it</h3>
-          <p>
-            Your artwork is prepared specifically for embroidery
-            so the final result looks clean and professional.
-          </p>
-        </article>
-
-        <article>
-          <b>03</b>
-          <h3>We stitch it</h3>
-          <p>
-            Once everything is approved, your garment is produced
-            and prepared for collection or delivery.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-
-    <!-- CTA -->
     <section class="banner">
 
-      <p class="eyebrow">READY WHEN YOU ARE</p>
+      <div class="quote-box">
 
-      <h2>
-        Turn your logo into<br>
-        <i>something worth wearing.</i>
-      </h2>
+        <p class="eyebrow">
+          START YOUR PROJECT
+        </p>
 
-      <a class="btn gold" href="custom.html">START A CUSTOM ORDER</a>
+        <h2>
+          Turn your logo into
+          <i>something worth wearing.</i>
+        </h2>
+
+        <p>
+          Send your design. Choose your garment.
+          We'll handle the embroidery.
+        </p>
+
+        <br>
+
+        <a class="btn gold" href="custom.html">
+          START A CUSTOM ORDER
+        </a>
+
+      </div>
 
     </section>
 
 
-    <!-- FAQ -->
+    <!-- =========================================
+         FAQ
+         ========================================= -->
+
     <section class="section faq">
 
       <div>
-        <p class="eyebrow">FAQ</p>
-        <h2>Questions.<br><i>Answered.</i></h2>
+
+        <p class="eyebrow">
+          FAQ
+        </p>
+
+        <h2>
+          Questions.<br>
+          <i>Answered.</i>
+        </h2>
+
       </div>
+
 
       <div>
 
         <details>
-          <summary>Can I order just one item?</summary>
-          <p>Yes. Small personal orders are welcome.</p>
+          <summary>
+            Can I order just one item?
+          </summary>
+
+          <p>
+            Yes. Small personal orders are welcome.
+          </p>
         </details>
 
-        <details>
-          <summary>Can you embroider my existing logo?</summary>
-          <p>Yes. Send us your logo and we can assess it for embroidery.</p>
-        </details>
 
         <details>
-          <summary>Do you take business orders?</summary>
-          <p>Yes. We can produce embroidered clothing for businesses, teams and staff.</p>
+          <summary>
+            Can you embroider my existing logo?
+          </summary>
+
+          <p>
+            Yes. Send us your logo and we can assess
+            it for embroidery.
+          </p>
         </details>
 
+
         <details>
-          <summary>How do I get a price?</summary>
-          <p>Send your logo, garment choice and quantity through our custom order form.</p>
+          <summary>
+            Do you take business orders?
+          </summary>
+
+          <p>
+            Yes. We can produce embroidered clothing
+            for businesses, teams and staff.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            Can I personalise baby clothing?
+          </summary>
+
+          <p>
+            Yes. Names and personalised designs are
+            available for suitable garments.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>
+            How do I get a price?
+          </summary>
+
+          <p>
+            Send your logo, garment choice and quantity
+            through our custom order form.
+          </p>
         </details>
 
       </div>
@@ -252,35 +1340,66 @@
   </main>
 
 
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+
   <footer>
 
     <div>
+
       <a class="logo" href="index.html">
         ZIREK
         <small>CUSTOM EMBROIDERY</small>
       </a>
 
-      <p>Premium custom embroidery for the UK.</p>
+      <p>
+        Premium custom embroidery for the UK.
+      </p>
+
     </div>
 
+
     <div>
+
       <b>EXPLORE</b>
-      <a href="shop.html">Shop</a>
-      <a href="business.html">Business</a>
-      <a href="about.html">About</a>
+
+      <a href="shop.html">
+        Shop
+      </a>
+
+      <a href="business.html">
+        Business
+      </a>
+
+      <a href="about.html">
+        About
+      </a>
+
     </div>
 
+
     <div>
+
       <b>CONTACT</b>
-      <a href="custom.html">Get a Quote</a>
-      <a href="contact.html">Contact</a>
+
+      <a href="custom.html">
+        Get a Quote
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
     </div>
 
   </footer>
 
+
   <div class="copy">
     © 2026 ZIREK Custom Embroidery. All rights reserved.
   </div>
+
 
 </body>
 </html>
