@@ -12,3 +12,99 @@
 .floating b{
   color:#efd3a0;
 }
+
+
+/* =========================================
+   ZIREK LOGO HERO — SAME SIZE AS HERO IMAGE
+   ========================================= */
+
+.home-hero-photo{
+  position:relative;
+  width:100%;
+  height:560px;
+  overflow:hidden;
+  border:1px solid #292722;
+  background:
+    radial-gradient(
+      circle at center,
+      #191919 0%,
+      #0c0c0c 62%,
+      #070707 100%
+    );
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 25px 80px rgba(0,0,0,.35);
+}
+
+.home-hero-photo .zirek-hero-logo{
+  width:82%;
+  height:82%;
+  display:block;
+  object-fit:contain;
+  object-position:center;
+  filter:
+    drop-shadow(0 20px 35px rgba(0,0,0,.65))
+    drop-shadow(0 0 20px rgba(213,173,85,.08));
+  transition:transform .7s cubic-bezier(.2,.7,.2,1);
+  position:relative;
+  z-index:1;
+}
+
+.home-hero-photo:hover .zirek-hero-logo{
+  transform:scale(1.035);
+}
+
+.home-hero-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(213,173,85,.06),
+      transparent 52%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.02),
+      rgba(0,0,0,.30)
+    );
+  pointer-events:none;
+  z-index:2;
+}
+
+.home-hero-photo .hero-photo-label{
+  position:absolute;
+  z-index:3;
+  left:24px;
+  bottom:24px;
+  padding:11px 14px;
+  border:1px solid rgba(213,173,85,.65);
+  background:rgba(8,8,8,.78);
+  color:#efd38b;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.18em;
+  backdrop-filter:blur(10px);
+}
+
+.home-hero-photo .hero-photo-label small{
+  display:block;
+  margin-top:5px;
+  color:#ddd;
+  font-size:8px;
+  font-weight:500;
+  letter-spacing:.1em;
+}
+
+@media(max-width:560px){
+  .home-hero-photo{
+    height:430px;
+  }
+
+  .home-hero-photo .zirek-hero-logo{
+    width:88%;
+    height:82%;
+  }
+}
