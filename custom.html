@@ -1,6 +1,76 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Custom Embroidery — ZIREK</title><link rel="stylesheet" href="assets/style.css"></head><body>
-<div class="top">CUSTOM EMBROIDERY · SMALL ORDERS WELCOME · UK</div><header><a class="logo" href="index.html">ZIREK<small>CUSTOM EMBROIDERY</small></a><nav><a href="shop.html">Shop</a><a href="business.html">Business</a><a class="active" href="custom.html">Custom</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><a class="btn outline" href="#quote">GET A QUOTE</a></header>
-<section class="page"><p class="eyebrow">CUSTOM EMBROIDERY</p><h1>Bring us your <i>idea.</i></h1><p>Upload your logo or artwork and tell us what you need.</p></section>
-<section id="quote" class="section form"><div><p class="eyebrow">REQUEST A QUOTE</p><h2>Tell us what you're making.</h2><p>We'll review your artwork, confirm the garment and placement, then quote your order.</p></div>
-<form id="quoteForm"><label>Name<input required name="name"></label><label>Email<input required type="email" name="email"></label><label>Phone / WhatsApp<input name="phone"></label><label>Product<select name="product"><option>T-Shirt</option><option>Hoodie</option><option>Polo</option><option>Long Sleeve</option><option>Workwear</option><option>Baby / Personalised</option><option>Other</option></select></label><label>Quantity<input required type="number" min="1" value="1" name="quantity"></label><label>Placement<select name="placement"><option>Left chest</option><option>Centre chest</option><option>Back</option><option>Left sleeve</option><option>Multiple</option></select></label><label class="wide">Logo / artwork<input type="file" name="logo" accept=".png,.jpg,.jpeg,.pdf,.svg"></label><label class="wide">Message<textarea name="message" rows="5" placeholder="Colours, sizes, deadline, special requests..."></textarea></label><button class="btn gold" type="submit">SEND QUOTE REQUEST</button><p id="status"></p></form></section>
-<footer><div><a class="logo" href="index.html">ZIREK<small>CUSTOM EMBROIDERY</small></a><p>Premium custom embroidery for the UK.</p></div><div><b>EXPLORE</b><a href="shop.html">Shop</a><a href="business.html">Business</a></div><div><b>CONTACT</b><a href="contact.html">Contact</a></div></footer><div class="copy">© 2026 ZIREK Custom Embroidery.</div><script src="assets/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Request a custom embroidery quote from ZIREK. Upload your logo and choose your garment, placement and quantity.">
+<title>Custom Embroidery — ZIREK</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.quote-note{max-width:700px;margin:12px 0 30px;color:#888;font-size:12px;line-height:1.7}.form form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form label{display:flex;flex-direction:column;gap:8px;color:#aaa;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.form input,.form select,.form textarea{width:100%;padding:13px 14px;border:1px solid #292722;background:#101010;color:#eee;font:inherit;font-size:12px;outline:none}.form input:focus,.form select:focus,.form textarea:focus{border-color:#d5ad55}.form .wide,.form button,.form #status{grid-column:1/-1}.form button{width:max-content}.form #status{margin:0;color:#efd38b;font-size:11px;line-height:1.6}.upload-note{color:#777;font-size:9px;font-weight:500;letter-spacing:0;text-transform:none}.form select option{background:#101010;color:#fff}@media(max-width:700px){.form form{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top">CUSTOM EMBROIDERY · SMALL ORDERS WELCOME · UK</div>
+<header>
+<a class="logo" href="index.html">ZIREK<small>CUSTOM EMBROIDERY</small></a>
+<nav><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="business.html">Business</a><a class="active" href="custom.html">Custom</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<a class="btn outline" href="#quote">GET A QUOTE</a>
+</header>
+<section class="page">
+<p class="eyebrow">CUSTOM EMBROIDERY</p>
+<h1>Bring us your <i>idea.</i></h1>
+<p>Upload your logo or artwork and tell us what you need.</p>
+</section>
+<section id="quote" class="section form">
+<div>
+<p class="eyebrow">REQUEST A QUOTE</p>
+<h2>Tell us what you're making.</h2>
+<p class="quote-note">Send your garment, quantity, placement and artwork. Your request will be emailed to ZIREK so it can be reviewed and quoted.</p>
+</div>
+<form id="quoteForm" action="https://formsubmit.co/hello@zirek.co.uk" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="_subject" value="New ZIREK Custom Embroidery Quote">
+<input type="hidden" name="_next" value="https://zirekcustom.github.io/zirek-custom-embroidery/custom.html?sent=1">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_url" value="https://zirekcustom.github.io/zirek-custom-embroidery/custom.html">
+<label>Name<input required name="name" autocomplete="name"></label>
+<label>Email<input required type="email" name="email" autocomplete="email"></label>
+<label>Phone / WhatsApp<input name="phone" autocomplete="tel"></label>
+<label>Product<select name="product">
+<option>T-Shirt</option>
+<option>Hoodie</option>
+<option>Polo</option>
+<option>Long Sleeve</option>
+<option>Golden Scissors Barber Jacket</option>
+<option>Golden Scissors Barber Polo</option>
+<option>Golden Scissors Barber Apron</option>
+<option>Golden Scissors Barber Cap</option>
+<option>ZIREK Chef Jacket</option>
+<option>ZIREK Restaurant Apron</option>
+<option>ZIREK Workwear Shirt</option>
+<option>Morgan Baby Bodysuit</option>
+<option>Morgan Baby Romper</option>
+<option>Morgan Baby Set</option>
+<option>Morgan Baby Hat</option>
+<option>Morgan Gift Set</option>
+<option>Other</option>
+</select></label>
+<label>Quantity<input required type="number" min="1" value="1" name="quantity"></label>
+<label>Placement<select name="placement"><option>Left chest</option><option>Centre chest</option><option>Back</option><option>Left sleeve</option><option>Multiple</option></select></label>
+<label class="wide">Logo / artwork<input type="file" name="logo" accept=".png,.jpg,.jpeg,.pdf,.svg"><span class="upload-note">PNG, JPG, PDF or SVG. Total uploaded file size must stay within 10MB.</span></label>
+<label class="wide">Message<textarea name="message" rows="6" placeholder="Colours, sizes, deadline, name to embroider, special requests..."></textarea></label>
+<button class="btn gold" type="submit">SEND QUOTE REQUEST</button>
+<p id="status">Your request will open FormSubmit the first time and may require a one-time email confirmation before submissions are delivered.</p>
+</form>
+</section>
+<footer><div><a class="logo" href="index.html">ZIREK<small>CUSTOM EMBROIDERY</small></a><p>Premium custom embroidery for the UK.</p></div><div><b>EXPLORE</b><a href="shop.html">Shop</a><a href="business.html">Business</a></div><div><b>CONTACT</b><a href="contact.html">Contact</a></div></footer>
+<div class="copy">© 2026 ZIREK Custom Embroidery.</div>
+<script>
+const sent=new URLSearchParams(location.search).get('sent');
+if(sent==='1'){
+const status=document.getElementById('status');
+if(status)status.textContent='Thank you. Your quote request has been sent. ZIREK will review your details and contact you.';
+}
+</script>
+</body>
+</html>
