@@ -4,38 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZIREK Custom Embroidery — Premium Personalisation</title>
-  <link rel="stylesheet" href="style.css">
   <style>
-    /* Güvenlik Stilleri: Resimler ve kartlar asla bozulmasın */
-    .zirek-hero-logo {
-      max-width: 160px;
-      height: auto;
-      display: block;
-      margin: 0 auto 20px auto;
+    :root {
+      --bg-color: #fcfbf9;
+      --card-bg: #f4f1ea;
+      --border-color: #e2ddd3;
+      --text-main: #1c1b18;
+      --text-muted: #5c584f;
+      --accent: #9e7a2f;
     }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+
+    .zirek-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .zirek-header {
+      background-color: var(--bg-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .zirek-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .zirek-logo {
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+    .zirek-logo span {
+      color: var(--accent);
+    }
+    .zirek-nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .zirek-nav-links a {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .zirek-nav-links a:hover, .zirek-nav-links a.active {
+      color: var(--accent);
+    }
+
+    /* Hero Section */
+    .zirek-hero {
+      text-align: center;
+      padding: 70px 20px 40px 20px;
+    }
+    .zirek-hero h1 {
+      font-family: Georgia, serif;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: normal;
+      color: var(--text-main);
+    }
+    .zirek-hero p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+    .zirek-btn-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .zirek-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: var(--accent);
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+    .zirek-btn-outline {
+      background-color: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    /* Grid & Cards (Görseli Düzeltilen Alan) */
     .zirek-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      padding: 40px 0;
+      gap: 30px;
+      padding: 30px 0 70px 0;
     }
     .zirek-card {
-      background-color: var(--bg-card, #f4f1ea);
-      border: 1px solid var(--border-color, #e2ddd3);
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
       border-radius: 6px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      transition: transform 0.2s ease;
     }
-    .zirek-card-img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      background-color: #eee;
+    .zirek-card:hover {
+      transform: translateY(-4px);
+    }
+    .zirek-card-banner {
+      background: linear-gradient(135deg, #e8e3d8 0%, #d5cfc2 100%);
+      padding: 35px 20px;
+      text-align: center;
+      color: var(--accent);
+      font-family: Georgia, serif;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border-color);
+      font-weight: bold;
     }
     .zirek-card-body {
-      padding: 20px;
+      padding: 24px;
       text-align: left;
+    }
+    .zirek-card-title {
+      font-family: Georgia, serif;
+      font-size: 1.15rem;
+      margin: 0 0 10px 0;
+      color: var(--text-main);
+    }
+    .zirek-card-text {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .zirek-footer {
+      background-color: var(--card-bg);
+      border-top: 1px solid var(--border-color);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .zirek-footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 15px 0;
+    }
+    .zirek-footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .zirek-footer-links a:hover {
+      color: var(--accent);
     }
   </style>
 </head>
@@ -60,15 +209,13 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="zirek-hero" style="padding: 60px 20px; text-align: center;">
+  <section class="zirek-hero">
     <div class="zirek-container">
-      <img src="assets/logo.png" alt="ZIREK Logo" class="zirek-hero-logo" onerror="this.style.display='none'">
-      <h1 style="font-family: Georgia, serif; font-size: 2.5rem; margin-bottom: 15px;">Built for your brand.</h1>
-      <p style="max-width: 600px; margin: 0 auto 25px auto; color: #5c584f; font-size: 1rem;">
+      <h1>Built for your brand.</h1>
+      <p>
         Elevate your team's image with precision custom embroidery. From high-end hospitality uniforms to bespoke corporate workwear and personalized apparel.
       </p>
-
-      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+      <div class="zirek-btn-group">
         <a href="custom.html" class="zirek-btn">Request a Quote</a>
         <a href="business.html" class="zirek-btn zirek-btn-outline">Explore Workwear</a>
       </div>
@@ -80,42 +227,34 @@
     <div class="zirek-grid">
       
       <div class="zirek-card">
-        <img src="assets/barber.jpg" alt="Barber & Beauty" class="zirek-card-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22><rect width=%22100%%22 height=%22100%%22 fill=%22%23e2ddd3%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%238a867d%22 font-family=%22sans-serif%22 font-size=%2214%22>Barber & Beauty</text></svg>'">
+        <div class="zirek-card-banner">Salon & Spa</div>
         <div class="zirek-card-body">
-          <h3 class="zirek-card-title" style="font-family: Georgia, serif; font-size: 1.1rem; margin-bottom: 8px;">Barber & Beauty</h3>
-          <p style="color: #5c584f; font-size: 0.85rem; margin: 0;">
-            Durable, stylish aprons and tunics crafted for professional salons.
-          </p>
+          <h3 class="zirek-card-title">Barber & Beauty</h3>
+          <p class="zirek-card-text">Durable, stylish aprons and tunics crafted for professional salons.</p>
         </div>
       </div>
 
       <div class="zirek-card">
-        <img src="assets/chef.jpg" alt="Chef & Catering" class="zirek-card-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22><rect width=%22100%%22 height=%22100%%22 fill=%22%23e2ddd3%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%238a867d%22 font-family=%22sans-serif%22 font-size=%2214%22>Chef & Catering</text></svg>'">
+        <div class="zirek-card-banner">Kitchen & Bar</div>
         <div class="zirek-card-body">
-          <h3 class="zirek-card-title" style="font-family: Georgia, serif; font-size: 1.1rem; margin-bottom: 8px;">Chef & Catering</h3>
-          <p style="color: #5c584f; font-size: 0.85rem; margin: 0;">
-            High-temperature resistant, comfortable embroidered chef jackets.
-          </p>
+          <h3 class="zirek-card-title">Chef & Catering</h3>
+          <p class="zirek-card-text">High-temperature resistant, comfortable embroidered chef jackets.</p>
         </div>
       </div>
 
       <div class="zirek-card">
-        <img src="assets/staff.jpg" alt="Staff & Corporate" class="zirek-card-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22><rect width=%22100%%22 height=%22100%%22 fill=%22%23e2ddd3%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%238a867d%22 font-family=%22sans-serif%22 font-size=%2214%22>Staff & Corporate</text></svg>'">
+        <div class="zirek-card-banner">Corporate</div>
         <div class="zirek-card-body">
-          <h3 class="zirek-card-title" style="font-family: Georgia, serif; font-size: 1.1rem; margin-bottom: 8px;">Staff & Corporate</h3>
-          <p style="color: #5c584f; font-size: 0.85rem; margin: 0;">
-            Premium polo shirts, fleece jackets, and shirts customized for company teams.
-          </p>
+          <h3 class="zirek-card-title">Staff & Corporate</h3>
+          <p class="zirek-card-text">Premium polo shirts, fleece jackets, and shirts customized for company teams.</p>
         </div>
       </div>
 
       <div class="zirek-card">
-        <img src="assets/custom.jpg" alt="Personalized Apparel" class="zirek-card-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22><rect width=%22100%%22 height=%22100%%22 fill=%22%23e2ddd3%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%238a867d%22 font-family=%22sans-serif%22 font-size=%2214%22>Personalized Apparel</text></svg>'">
+        <div class="zirek-card-banner">Bespoke</div>
         <div class="zirek-card-body">
-          <h3 class="zirek-card-title" style="font-family: Georgia, serif; font-size: 1.1rem; margin-bottom: 8px;">Personalized Apparel</h3>
-          <p style="color: #5c584f; font-size: 0.85rem; margin: 0;">
-            Custom hoodies, caps, and gift items embroidered to your exact specifications.
-          </p>
+          <h3 class="zirek-card-title">Personalized Apparel</h3>
+          <p class="zirek-card-text">Custom hoodies, caps, and gift items embroidered to your exact specifications.</p>
         </div>
       </div>
 
@@ -123,16 +262,16 @@
   </section>
 
   <!-- Footer -->
-  <footer class="zirek-footer" style="padding: 30px 0; text-align: center; border-top: 1px solid var(--border-color, #e2ddd3);">
+  <footer class="zirek-footer">
     <div class="zirek-container">
-      <ul class="zirek-footer-links" style="display: flex; justify-content: center; gap: 20px; list-style: none; padding: 0; margin-bottom: 10px;">
+      <ul class="zirek-footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="business.html">Business Workwear</a></li>
         <li><a href="custom.html">Custom Orders</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-      <p style="font-size: 0.85rem; color: #5c584f;">Cambridge, United Kingdom | info@zirekcustom.com</p>
+      <p>Cambridge, United Kingdom | info@zirekcustom.com</p>
       <p style="margin-top: 10px; font-size: 0.75rem; color: #8a867d;">
         © 2026 ZIREK CUSTOM EMBROIDERY. ALL RIGHTS RESERVED.
       </p>
