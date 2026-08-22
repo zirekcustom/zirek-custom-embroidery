@@ -4,14 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZIREK Custom Embroidery — Premium Personalisation</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <!-- style.css ana dizinde olduğu için yol güncellendi -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Top Announcement Bar -->
-  <div class="top">
-    PREMIUM CUSTOM EMBROIDERY & BESPOKE WORKWEAR SERVICES — CAMBRIDGE & UK WIDE
-  </div>
 
   <!-- Header / Navigation -->
   <header class="zirek-header">
@@ -31,104 +27,83 @@
     </div>
   </header>
 
-  <!-- Main Hero Section -->
-  <section class="hero-section">
+  <!-- Hero Section -->
+  <section class="zirek-hero">
     <div class="zirek-container">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <span class="hero-badge">Zirek Craftsmanship</span>
-          <h1 class="hero-title">Built for your <i>brand.</i></h1>
-          <p class="hero-desc">
-            Elevate your team's image with precision custom embroidery. From high-end hospitality uniforms to bespoke corporate workwear and personalized apparel.
-          </p>
-          <div class="hero-btns">
-            <a href="custom.html" class="zirek-btn">Request a Quote</a>
-            <a href="business.html" class="zirek-btn zirek-btn-outline">Explore Workwear</a>
-          </div>
-        </div>
+      <img src="assets/logo.png" alt="ZIREK Custom Embroidery Logo" class="zirek-hero-logo">
+      <h1>Built for your brand.</h1>
+      <p>
+        Elevate your team's image with precision custom embroidery. From high-end hospitality uniforms to bespoke corporate workwear and personalized apparel.
+      </p>
 
-        <div class="home-hero-photo">
-          <img src="assets/logo.png" alt="ZIREK Custom Embroidery Logo" class="zirek-hero-logo">
-        </div>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="custom.html" class="zirek-btn">Request a Quote</a>
+        <a href="business.html" class="zirek-btn zirek-btn-outline">Explore Workwear</a>
       </div>
     </div>
   </section>
 
-  <!-- Featured Categories Showcase -->
-  <section class="section">
-    <div class="zirek-container">
-      <div style="text-align: center; max-width: 600px; margin: 0 auto 30px;">
-        <span class="hero-badge">Our Specialties</span>
-        <h2 style="font-family: Georgia, serif; font-size: 2rem; color: #ffffff; margin-top: 10px;">
-          Bespoke Embroidery Solutions
-        </h2>
-      </div>
-
-      <div class="showcase-grid">
-        <div class="showcase-card">
-          <div class="showcase-img-wrap">
-            <span class="showcase-tag">Barber & Salon</span>
-            <img src="assets/barber.jpg" alt="Barber Uniforms">
-          </div>
-          <div class="showcase-content">
-            <h3 class="showcase-title">Barber & Beauty</h3>
-            <p class="showcase-desc">Durable, stylish aprons and tunics crafted for professional salons.</p>
-          </div>
-        </div>
-
-        <div class="showcase-card">
-          <div class="showcase-img-wrap">
-            <span class="showcase-tag">Hospitality</span>
-            <img src="assets/chef.jpg" alt="Chef & Hospitality Wear">
-          </div>
-          <div class="showcase-content">
-            <h3 class="showcase-title">Chef & Catering</h3>
-            <p class="showcase-desc">High-temperature resistant, comfortable embroidered chef jackets.</p>
-          </div>
-        </div>
-
-        <div class="showcase-card">
-          <div class="showcase-img-wrap">
-            <span class="showcase-tag">Corporate</span>
-            <img src="assets/staff.jpg" alt="Staff Workwear">
-          </div>
-          <div class="showcase-content">
-            <h3 class="showcase-title">Staff & Corporate</h3>
-            <p class="showcase-desc">Premium polo shirts, fleece jackets, and shirts customized for company teams.</p>
-          </div>
-        </div>
-
-        <div class="showcase-card">
-          <div class="showcase-img-wrap">
-            <span class="showcase-tag">Personalized</span>
-            <img src="assets/custom.jpg" alt="Personalised Clothing">
-          </div>
-          <div class="showcase-content">
-            <h3 class="showcase-title">Personalized Apparel</h3>
-            <p class="showcase-desc">Custom hoodies, caps, and gift items embroidered to your exact specifications.</p>
-          </div>
+  <!-- Grid Showcase -->
+  <section class="zirek-container">
+    <div class="zirek-grid">
+      
+      <div class="zirek-card">
+        <img src="assets/barber.jpg" alt="Barber & Beauty" class="zirek-card-img">
+        <div class="zirek-card-body">
+          <h3 class="zirek-card-title">Barber & Beauty</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Durable, stylish aprons and tunics crafted for professional salons.
+          </p>
         </div>
       </div>
+
+      <div class="zirek-card">
+        <img src="assets/chef.jpg" alt="Chef & Catering" class="zirek-card-img">
+        <div class="zirek-card-body">
+          <h3 class="zirek-card-title">Chef & Catering</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">
+            High-temperature resistant, comfortable embroidered chef jackets.
+          </p>
+        </div>
+      </div>
+
+      <div class="zirek-card">
+        <img src="assets/staff.jpg" alt="Staff & Corporate" class="zirek-card-img">
+        <div class="zirek-card-body">
+          <h3 class="zirek-card-title">Staff & Corporate</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Premium polo shirts, fleece jackets, and shirts customized for company teams.
+          </p>
+        </div>
+      </div>
+
+      <div class="zirek-card">
+        <img src="assets/custom.jpg" alt="Personalized Apparel" class="zirek-card-img">
+        <div class="zirek-card-body">
+          <h3 class="zirek-card-title">Personalized Apparel</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Custom hoodies, caps, and gift items embroidered to your exact specifications.
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="zirek-footer">
     <div class="zirek-container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="zirek-logo">ZIREK <span>EMBROIDERY</span></a>
-          <p style="color: #a0a0a0; font-size: 13px; margin-top: 14px; max-width: 300px;">
-            Bespoke embroidery and corporate workwear based in Cambridge, UK.
-          </p>
-        </div>
-        <div>
-          <p style="color: #a0a0a0; font-size: 13px;">Cambridge, United Kingdom<br>info@zirekcustom.com</p>
-        </div>
-      </div>
-      <div class="copy">
+      <ul class="zirek-footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business.html">Business Workwear</a></li>
+        <li><a href="custom.html">Custom Orders</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <p>Cambridge, United Kingdom | info@zirekcustom.com</p>
+      <p style="margin-top: 15px; font-size: 0.75rem; color: var(--text-dim);">
         © 2026 ZIREK CUSTOM EMBROIDERY. ALL RIGHTS RESERVED.
-      </div>
+      </p>
     </div>
   </footer>
 
